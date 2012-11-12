@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="LuaBridgeUnitTests">
+      <UniqueIdentifier>{DD9B2BB0-10A4-D84F-855D-B8C521637F50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaBridgeUnitTests\LuaUnityBuild">
+      <UniqueIdentifier>{C2FEC07B-BF72-54A4-AF56-9A4783EABFA8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Juce Library Code">
+      <UniqueIdentifier>{8B4D1BAA-6DB4-CAEC-A0FA-271F354D5C61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp">
+      <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp">
+      <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h">
+      <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Jucer\JuceLibraryCode\JuceHeader.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\resources.rc">
+      <Filter>Juce Library Code</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

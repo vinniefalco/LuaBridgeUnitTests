@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="M7otKW" name="LuaBridgeUnitTests" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.LuaBridgeUnitTests" jucerVersion="3.0.0">
+  <MAINGROUP id="C25QV2" name="LuaBridgeUnitTests">
+    <GROUP id="{5F290C50-B652-0A19-2155-C4B62719F137}" name="LuaUnityBuild">
+      <FILE id="wyhbTt" name="LuaUnityBuild_5.1.5.cpp" compile="1" resource="0"
+            file="../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.1.5.cpp"/>
+      <FILE id="wZAXuA" name="LuaUnityBuild_5.2.1.cpp" compile="1" resource="0"
+            file="../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp"/>
+      <FILE id="KxNebT" name="LuaUnityBuild.h" compile="0" resource="0" file="../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_audio" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <EXPORTFORMATS>
+    <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="..\..\..\..\LuaBridgeDemo\ExternalDependencies\JUCE\modules">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="LuaBridgeUnitTests"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="LuaBridgeUnitTests"/>
+      </CONFIGURATIONS>
+    </VS2010>
+  </EXPORTFORMATS>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
