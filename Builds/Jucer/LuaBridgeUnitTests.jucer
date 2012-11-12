@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="M7otKW" name="LuaBridgeUnitTests" projectType="guiapp" version="1.0.0"
-              bundleIdentifier="com.yourcompany.LuaBridgeUnitTests" jucerVersion="3.0.0">
+              bundleIdentifier="com.vinniefalco.LuaBridgeUnitTests" jucerVersion="3.0.0">
   <MAINGROUP id="C25QV2" name="LuaBridgeUnitTests">
     <GROUP id="{5F290C50-B652-0A19-2155-C4B62719F137}" name="LuaUnityBuild">
       <FILE id="wyhbTt" name="LuaUnityBuild_5.1.5.cpp" compile="1" resource="0"
