@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{420584BF-0C47-0FB8-B0D8-3E8C38AA3774}") = "LuaBridgeUnitTests", "LuaBridgeUnitTests.vcxproj", "{8547B78E-5618-FB59-A710-C3364487D3AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8547B78E-5618-FB59-A710-C3364487D3AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8547B78E-5618-FB59-A710-C3364487D3AF}.Debug|Win32.Build.0 = Debug|Win32
+		{8547B78E-5618-FB59-A710-C3364487D3AF}.Release|Win32.ActiveCfg = Release|Win32
+		{8547B78E-5618-FB59-A710-C3364487D3AF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
