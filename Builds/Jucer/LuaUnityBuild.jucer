@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="XfJUsu" name="LuaUnityBuild" projectType="library" version="1.0.0"
+              bundleIdentifier="com.vinniefalco.LuaUnityBuild" jucerVersion="3.0.0">
+  <MAINGROUP id="jamuhw" name="LuaUnityBuild">
+    <GROUP id="{06053CD8-B7A5-D116-F660-A3A5F98BB637}" name="Lua 5.1.5">
+      <FILE id="MNJ7Dc" name="lapi.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lapi.c"/>
+      <FILE id="bOaosT" name="lapi.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lapi.h"/>
+      <FILE id="tIvf7V" name="lauxlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lauxlib.c"/>
+      <FILE id="zj0PLV" name="lauxlib.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lauxlib.h"/>
+      <FILE id="T80yh1" name="lbaselib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lbaselib.c"/>
+      <FILE id="TpPes1" name="lcode.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lcode.c"/>
+      <FILE id="IpkfGa" name="lcode.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lcode.h"/>
+      <FILE id="y6oWxz" name="ldblib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ldblib.c"/>
+      <FILE id="pNJCdE" name="ldebug.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ldebug.c"/>
+      <FILE id="vRtsF4" name="ldebug.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ldebug.h"/>
+      <FILE id="L0C0bh" name="ldo.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ldo.c"/>
+      <FILE id="kvEBRm" name="ldo.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ldo.h"/>
+      <FILE id="GfeOUL" name="ldump.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ldump.c"/>
+      <FILE id="eRRZ63" name="lfunc.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lfunc.c"/>
+      <FILE id="DQcLuC" name="lfunc.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lfunc.h"/>
+      <FILE id="f2yrbm" name="lgc.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lgc.c"/>
+      <FILE id="SnjIwG" name="lgc.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lgc.h"/>
+      <FILE id="AiZHeh" name="linit.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/linit.c"/>
+      <FILE id="hv01Sq" name="liolib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/liolib.c"/>
+      <FILE id="pJFEUo" name="llex.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/llex.c"/>
+      <FILE id="zW7vj0" name="llex.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/llex.h"/>
+      <FILE id="wsVc4t" name="llimits.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/llimits.h"/>
+      <FILE id="dXsolD" name="lmathlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lmathlib.c"/>
+      <FILE id="gvAiX0" name="lmem.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lmem.c"/>
+      <FILE id="x0U8IA" name="lmem.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lmem.h"/>
+      <FILE id="etAFNK" name="loadlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/loadlib.c"/>
+      <FILE id="HOS1ny" name="lobject.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lobject.c"/>
+      <FILE id="IT1eMz" name="lobject.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lobject.h"/>
+      <FILE id="tDuypZ" name="lopcodes.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lopcodes.c"/>
+      <FILE id="KUbbop" name="lopcodes.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lopcodes.h"/>
+      <FILE id="VTd4Ba" name="loslib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/loslib.c"/>
+      <FILE id="QIBqGb" name="lparser.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lparser.c"/>
+      <FILE id="tS4UBj" name="lparser.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lparser.h"/>
+      <FILE id="ti76la" name="lstate.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lstate.c"/>
+      <FILE id="nKIWnP" name="lstate.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lstate.h"/>
+      <FILE id="NWlTEo" name="lstring.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lstring.c"/>
+      <FILE id="bZ05ND" name="lstring.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lstring.h"/>
+      <FILE id="qWG8ya" name="lstrlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lstrlib.c"/>
+      <FILE id="G0Urdv" name="ltable.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ltable.c"/>
+      <FILE id="NQ4E1Y" name="ltable.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ltable.h"/>
+      <FILE id="i18GGk" name="ltablib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ltablib.c"/>
+      <FILE id="OZiOkF" name="ltm.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ltm.c"/>
+      <FILE id="rhaukU" name="ltm.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/ltm.h"/>
+      <FILE id="NnTbar" name="lua.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lua.h"/>
+      <FILE id="Ho4XPG" name="luaconf.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/luaconf.h"/>
+      <FILE id="DRHYVU" name="lualib.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lualib.h"/>
+      <FILE id="l0jkpw" name="lundump.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lundump.c"/>
+      <FILE id="yDJ0Ow" name="lundump.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lundump.h"/>
+      <FILE id="UZYEwm" name="lvm.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lvm.c"/>
+      <FILE id="WJcBzi" name="lvm.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lvm.h"/>
+      <FILE id="FGnmmP" name="lzio.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lzio.c"/>
+      <FILE id="hFOuap" name="lzio.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.1.5/src/lzio.h"/>
+    </GROUP>
+    <GROUP id="{96E59607-0539-CDA6-E5BA-87B15D4BFE7E}" name="Lua 5.2.1">
+      <FILE id="XJnhKv" name="lapi.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lapi.c"/>
+      <FILE id="eGa3PC" name="lapi.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lapi.h"/>
+      <FILE id="wSHs6G" name="lauxlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lauxlib.c"/>
+      <FILE id="aCWzCz" name="lauxlib.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lauxlib.h"/>
+      <FILE id="Rqxn3A" name="lbaselib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lbaselib.c"/>
+      <FILE id="IauoH1" name="lbitlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lbitlib.c"/>
+      <FILE id="k3OtGA" name="lcode.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lcode.c"/>
+      <FILE id="zUVcis" name="lcode.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lcode.h"/>
+      <FILE id="jm1H9R" name="lcorolib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lcorolib.c"/>
+      <FILE id="E55mWj" name="lctype.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lctype.c"/>
+      <FILE id="TpL8HV" name="lctype.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lctype.h"/>
+      <FILE id="fmef6O" name="ldblib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ldblib.c"/>
+      <FILE id="nipno8" name="ldebug.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ldebug.c"/>
+      <FILE id="suFPQD" name="ldebug.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ldebug.h"/>
+      <FILE id="F9IOYc" name="ldo.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ldo.c"/>
+      <FILE id="wKjbNt" name="ldo.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ldo.h"/>
+      <FILE id="aYvZLX" name="ldump.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ldump.c"/>
+      <FILE id="bhHVob" name="lfunc.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lfunc.c"/>
+      <FILE id="OwlDw4" name="lfunc.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lfunc.h"/>
+      <FILE id="OK6rl0" name="lgc.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lgc.c"/>
+      <FILE id="NkM4JN" name="lgc.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lgc.h"/>
+      <FILE id="Izbp1b" name="linit.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/linit.c"/>
+      <FILE id="AJDiwk" name="liolib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/liolib.c"/>
+      <FILE id="nqaE4M" name="llex.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/llex.c"/>
+      <FILE id="MKcQER" name="llex.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/llex.h"/>
+      <FILE id="DY0H3z" name="llimits.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/llimits.h"/>
+      <FILE id="ifwrcD" name="lmathlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lmathlib.c"/>
+      <FILE id="MKrqA4" name="lmem.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lmem.c"/>
+      <FILE id="TAarom" name="lmem.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lmem.h"/>
+      <FILE id="MGud0c" name="loadlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/loadlib.c"/>
+      <FILE id="D98vAH" name="lobject.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lobject.c"/>
+      <FILE id="bVL0Ag" name="lobject.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lobject.h"/>
+      <FILE id="PHO2t7" name="lopcodes.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lopcodes.c"/>
+      <FILE id="HBSyCU" name="lopcodes.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lopcodes.h"/>
+      <FILE id="yaWxLV" name="loslib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/loslib.c"/>
+      <FILE id="nvZBuH" name="lparser.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lparser.c"/>
+      <FILE id="wgqiFY" name="lparser.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lparser.h"/>
+      <FILE id="X8hQVH" name="lstate.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lstate.c"/>
+      <FILE id="uTG0cE" name="lstate.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lstate.h"/>
+      <FILE id="H3FWve" name="lstring.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lstring.c"/>
+      <FILE id="cMeyNm" name="lstring.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lstring.h"/>
+      <FILE id="bZqPuC" name="lstrlib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lstrlib.c"/>
+      <FILE id="DHElAr" name="ltable.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ltable.c"/>
+      <FILE id="HrYMMb" name="ltable.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ltable.h"/>
+      <FILE id="hHqOPa" name="ltablib.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ltablib.c"/>
+      <FILE id="gSKYnl" name="ltm.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ltm.c"/>
+      <FILE id="oVMwzO" name="ltm.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/ltm.h"/>
+      <FILE id="TkBVqa" name="lua.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lua.h"/>
+      <FILE id="tp6N6P" name="lua.hpp" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lua.hpp"/>
+      <FILE id="jiwxLq" name="luaconf.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/luaconf.h"/>
+      <FILE id="Aghm5X" name="lualib.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lualib.h"/>
+      <FILE id="CStJx5" name="lundump.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lundump.c"/>
+      <FILE id="xQ5tUq" name="lundump.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lundump.h"/>
+      <FILE id="F5aQEB" name="lvm.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lvm.c"/>
+      <FILE id="ieE3rS" name="lvm.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lvm.h"/>
+      <FILE id="jIu7ux" name="lzio.c" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lzio.c"/>
+      <FILE id="IIHtpO" name="lzio.h" compile="0" resource="0" file="../../ExternalDependencies/Lua.5.2.1/src/lzio.h"/>
+    </GROUP>
+    <FILE id="mKvH4z" name="LuaUnityBuild.h" compile="0" resource="0" file="../../Source/LuaUnityBuild/LuaUnityBuild.h"/>
+    <FILE id="WPC65u" name="LuaUnityBuild_5.1.5.cpp" compile="1" resource="0"
+          file="../../Source/LuaUnityBuild/LuaUnityBuild_5.1.5.cpp"/>
+    <FILE id="Y8hjYr" name="LuaUnityBuild_5.2.1.cpp" compile="1" resource="0"
+          file="../../Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp"/>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_gui_audio" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <EXPORTFORMATS>
+    <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="LuaUnityBuild"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="LuaUnityBuild"/>
+      </CONFIGURATIONS>
+    </VS2010>
+  </EXPORTFORMATS>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
