@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="M7otKW" name="LuaBridgeUnitTests" projectType="guiapp" version="1.0.0"
-              bundleIdentifier="com.vinniefalco.LuaBridgeUnitTests" jucerVersion="3.0.0">
+<JUCERPROJECT id="M7otKW" name="LuaBridgeUnitTests" projectType="consoleapp"
+              version="1.0.0" bundleIdentifier="com.vinniefalco.LuaBridgeUnitTests"
+              jucerVersion="3.0.0">
   <MAINGROUP id="C25QV2" name="LuaBridgeUnitTests">
+    <FILE id="LvhMbv" name="Main.cpp" compile="1" resource="0" file="../../Source/Main.cpp"/>
+    <FILE id="jkxX3i" name="SpeedTests.h" compile="0" resource="0" file="../../Source/SpeedTests.h"/>
+    <FILE id="et2YhB" name="SpeedTests.cpp" compile="1" resource="0" file="../../Source/SpeedTests.cpp"/>
+    <FILE id="V3rLcF" name="UnitTests.cpp" compile="0" resource="0" file="../../Source/UnitTests.cpp"/>
+    <FILE id="qb21cU" name="UnitTests.h" compile="0" resource="0" file="../../Source/UnitTests.h"/>
+    <FILE id="Jekyv4" name="UnitTests.lua" compile="0" resource="1" file="../../Source/UnitTests.lua"/>
     <GROUP id="{5F290C50-B652-0A19-2155-C4B62719F137}" name="LuaUnityBuild">
       <FILE id="wyhbTt" name="LuaUnityBuild_5.1.5.cpp" compile="1" resource="0"
             file="../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.1.5.cpp"/>
@@ -30,9 +37,11 @@
     <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="..\..\..\..\LuaBridgeDemo\ExternalDependencies\JUCE\modules">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
-                       isDebug="1" optimisation="1" targetName="LuaBridgeUnitTests"/>
+                       isDebug="1" optimisation="1" targetName="LuaBridgeUnitTests"
+                       headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
         <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
-                       isDebug="0" optimisation="2" targetName="LuaBridgeUnitTests"/>
+                       isDebug="0" optimisation="2" targetName="LuaBridgeUnitTests"
+                       headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
       </CONFIGURATIONS>
     </VS2010>
   </EXPORTFORMATS>
