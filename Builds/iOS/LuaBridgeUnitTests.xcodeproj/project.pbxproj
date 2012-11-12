@@ -1,0 +1,141 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+		B93186D290483505D69ACC8A = { isa = PBXBuildFile; fileRef = F045039CE99A35C0EB6666CD; };
+		B69434BBDD9EC25A76EBC600 = { isa = PBXBuildFile; fileRef = 98D8F08CF9BA6CCD786A1899; };
+		C1AF214A2B8E498B020CBABE = { isa = PBXBuildFile; fileRef = 9106902D8F74E725673A6383; };
+		BDCA982C908FD43D0AE591B1 = { isa = PBXBuildFile; fileRef = D4DB69F9E0ACBA0FB3CDBE3A; };
+		E1912615ED6A9521CBEE2B3F = { isa = PBXBuildFile; fileRef = 7BC46BBE20054ADF9F4B8A74; };
+		78A252B187D877C589D3BFF2 = { isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LuaBridgeUnitTests; sourceTree = "BUILT_PRODUCTS_DIR"; };
+		7BC46BBE20054ADF9F4B8A74 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData.cpp; path = ../Jucer/JuceLibraryCode/BinaryData.cpp; sourceTree = "SOURCE_ROOT"; };
+		823BA20B1CD880542FFA1032 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LuaUnityBuild.h; path = ../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild.h; sourceTree = "SOURCE_ROOT"; };
+		87ADCBE51FD295B8D89FA763 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnitTests.cpp; path = ../../Source/UnitTests.cpp; sourceTree = "SOURCE_ROOT"; };
+		8C77D14668CBDAF4AF798A55 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeedTests.h; path = ../../Source/SpeedTests.h; sourceTree = "SOURCE_ROOT"; };
+		8DC9A02D9B399A78C83014F9 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../Jucer/JuceLibraryCode/AppConfig.h; sourceTree = "SOURCE_ROOT"; };
+		90E78A8DECA50E184620EA84 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryData.h; path = ../Jucer/JuceLibraryCode/BinaryData.h; sourceTree = "SOURCE_ROOT"; };
+		9106902D8F74E725673A6383 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "LuaUnityBuild_5.1.5.cpp"; path = "../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.1.5.cpp"; sourceTree = "SOURCE_ROOT"; };
+		98D8F08CF9BA6CCD786A1899 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SpeedTests.cpp; path = ../../Source/SpeedTests.cpp; sourceTree = "SOURCE_ROOT"; };
+		BA097D69370DAA1E30944BC2 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../Jucer/JuceLibraryCode/JuceHeader.h; sourceTree = "SOURCE_ROOT"; };
+		CCAA0DC72F743F06B1A2B951 = { isa = PBXFileReference; lastKnownFileType = file.lua; name = UnitTests.lua; path = ../../Source/UnitTests.lua; sourceTree = "SOURCE_ROOT"; };
+		CE8D8AA3D74E38B11D47F5A1 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UnitTests.h; path = ../../Source/UnitTests.h; sourceTree = "SOURCE_ROOT"; };
+		D4DB69F9E0ACBA0FB3CDBE3A = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "LuaUnityBuild_5.2.1.cpp"; path = "../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp"; sourceTree = "SOURCE_ROOT"; };
+		F045039CE99A35C0EB6666CD = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../../Source/Main.cpp; sourceTree = "SOURCE_ROOT"; };
+		54565857D57BBA64DE848E9A = { isa = PBXGroup; children = (
+				9106902D8F74E725673A6383,
+				D4DB69F9E0ACBA0FB3CDBE3A,
+				823BA20B1CD880542FFA1032 ); name = LuaUnityBuild; sourceTree = "<group>"; };
+		C53DC55BA14AAA34316DD5AF = { isa = PBXGroup; children = (
+				F045039CE99A35C0EB6666CD,
+				8C77D14668CBDAF4AF798A55,
+				98D8F08CF9BA6CCD786A1899,
+				87ADCBE51FD295B8D89FA763,
+				CE8D8AA3D74E38B11D47F5A1,
+				CCAA0DC72F743F06B1A2B951,
+				54565857D57BBA64DE848E9A ); name = LuaBridgeUnitTests; sourceTree = "<group>"; };
+		E2EFC4EB22F4990228CC39D3 = { isa = PBXGroup; children = (
+				8DC9A02D9B399A78C83014F9,
+				7BC46BBE20054ADF9F4B8A74,
+				90E78A8DECA50E184620EA84,
+				BA097D69370DAA1E30944BC2 ); name = "Juce Library Code"; sourceTree = "<group>"; };
+		DEAAD4086B396F2AB67EFE2D = { isa = PBXGroup; children = (  ); name = Resources; sourceTree = "<group>"; };
+		EFD0EB44D576D4C164447AF1 = { isa = PBXGroup; children = (  ); name = Frameworks; sourceTree = "<group>"; };
+		AB17DDBAD8124FAB8E7BA7DD = { isa = PBXGroup; children = (
+				78A252B187D877C589D3BFF2 ); name = Products; sourceTree = "<group>"; };
+		38F75BBA0EB45447D4157BCE = { isa = PBXGroup; children = (
+				C53DC55BA14AAA34316DD5AF,
+				E2EFC4EB22F4990228CC39D3,
+				DEAAD4086B396F2AB67EFE2D,
+				EFD0EB44D576D4C164447AF1,
+				AB17DDBAD8124FAB8E7BA7DD ); name = Source; sourceTree = "<group>"; };
+		919E956FF8569E7E424145C9 = { isa = XCBuildConfiguration; buildSettings = {
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Externals ../../Externals/LuaUnityBuild/Source $(inherited)";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "/usr/bin";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+				"_DEBUG=1",
+				"DEBUG=1",
+				"JUCER_XCODE_IPHONE_511E173E=1"); }; name = Debug; };
+		D5DC9847C35B9D398F43C6F4 = { isa = XCBuildConfiguration; buildSettings = {
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Externals ../../Externals/LuaUnityBuild/Source $(inherited)";
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "/usr/bin";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+				"_NDEBUG=1",
+				"NDEBUG=1",
+				"JUCER_XCODE_IPHONE_511E173E=1"); }; name = Release; };
+		3945E2B053BE22DF1E035E23 = { isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				WARNING_CFLAGS = -Wreorder;
+				GCC_MODEL_TUNING = G5;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ZERO_LINK = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				PRODUCT_NAME = "LuaBridgeUnitTests"; }; name = Debug; };
+		E27F9D53A79E0BDCC579B629 = { isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				WARNING_CFLAGS = -Wreorder;
+				GCC_MODEL_TUNING = G5;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ZERO_LINK = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				PRODUCT_NAME = "LuaBridgeUnitTests"; }; name = Release; };
+		FEB0DD37FE61386E82B41E78 = { isa = XCConfigurationList; buildConfigurations = (
+				3945E2B053BE22DF1E035E23,
+				E27F9D53A79E0BDCC579B629 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		5CB0188B6BA0536C17FD8657 = { isa = XCConfigurationList; buildConfigurations = (
+				919E956FF8569E7E424145C9,
+				D5DC9847C35B9D398F43C6F4 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		38FF7EA50D1E615FD90A59A6 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (  ); runOnlyForDeploymentPostprocessing = 0; };
+		36ABBF8BE8366D265344BD1A = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				B93186D290483505D69ACC8A,
+				B69434BBDD9EC25A76EBC600,
+				C1AF214A2B8E498B020CBABE,
+				BDCA982C908FD43D0AE591B1,
+				E1912615ED6A9521CBEE2B3F ); runOnlyForDeploymentPostprocessing = 0; };
+		4A6F3DA25C32A9FCB8E7037A = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (  ); runOnlyForDeploymentPostprocessing = 0; };
+		A6A9EF1CEBF9B3B25D8B10A0 = { isa = PBXNativeTarget; buildConfigurationList = 5CB0188B6BA0536C17FD8657; buildPhases = (
+				38FF7EA50D1E615FD90A59A6,
+				36ABBF8BE8366D265344BD1A,
+				4A6F3DA25C32A9FCB8E7037A ); buildRules = ( ); dependencies = ( ); name = LuaBridgeUnitTests; productName = LuaBridgeUnitTests; productReference = 78A252B187D877C589D3BFF2; productInstallPath = /usr/bin; productType = "com.apple.product-type.tool"; };
+		1A42B60FD627179D5B3CD411 = { isa = PBXProject; buildConfigurationList = FEB0DD37FE61386E82B41E78; attributes = { LastUpgradeCheck = 0440; }; compatibilityVersion = "Xcode 3.2"; hasScannedForEncodings = 0; mainGroup = 38F75BBA0EB45447D4157BCE; projectDirPath = ""; projectRoot = ""; targets = ( A6A9EF1CEBF9B3B25D8B10A0 ); };
+	};
+	rootObject = 1A42B60FD627179D5B3CD411;
+}

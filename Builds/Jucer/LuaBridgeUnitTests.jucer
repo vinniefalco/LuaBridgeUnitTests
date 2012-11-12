@@ -34,7 +34,7 @@
     <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
   </MODULES>
   <EXPORTFORMATS>
-    <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="..\..\..\..\LuaBridgeDemo\ExternalDependencies\JUCE\modules">
+    <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
                        isDebug="1" optimisation="1" targetName="LuaBridgeUnitTests"
@@ -44,6 +44,40 @@
                        headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
       </CONFIGURATIONS>
     </VS2010>
+    <VS2008 targetFolder="../VisualStudio2008" libraryType="1" juceFolder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" isDebug="1"
+                       optimisation="1" targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" isDebug="0"
+                       optimisation="2" targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+      </CONFIGURATIONS>
+    </VS2008>
+    <LINUX_MAKE targetFolder="../Linux" juceFolder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="2"
+                       targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+      </CONFIGURATIONS>
+    </LINUX_MAKE>
+    <XCODE_MAC targetFolder="../MacOSX" juceFolder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="LuaBridgeUnitTests"
+                       headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="LuaBridgeUnitTests"
+                       headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+      </CONFIGURATIONS>
+    </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="../iOS" juceFolder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" iosCompatibility="default" isDebug="1" optimisation="1"
+                       targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+        <CONFIGURATION name="Release" iosCompatibility="default" isDebug="0" optimisation="2"
+                       targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
+      </CONFIGURATIONS>
+    </XCODE_IPHONE>
   </EXPORTFORMATS>
   <JUCEOPTIONS/>
 </JUCERPROJECT>
