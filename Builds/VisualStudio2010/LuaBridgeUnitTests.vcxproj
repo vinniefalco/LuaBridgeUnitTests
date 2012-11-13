@@ -126,24 +126,31 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp"/>
+    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
     <ClCompile Include="..\..\Source\SpeedTests.cpp"/>
     <ClCompile Include="..\..\Source\UnitTests.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp"/>
-    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
     <ClCompile Include="..\Jucer\JuceLibraryCode\BinaryData.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaBridge.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaBridgeExtras.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\RefCountedObject.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\RefCountedPtr.h"/>
+    <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
     <ClInclude Include="..\..\Source\SpeedTests.h"/>
     <ClInclude Include="..\..\Source\UnitTests.h"/>
-    <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\BinaryData.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\JuceHeader.h"/>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Externals\LuaBridge\CHANGES"/>
+    <None Include="..\..\Externals\LuaBridge\Doxyfile"/>
+    <None Include="..\..\Externals\LuaBridge\README.md"/>
     <None Include="..\..\Source\UnitTests.lua"/>
   </ItemGroup>
   <ItemGroup>

@@ -129,34 +129,74 @@
   <References/>
   <Files>
     <Filter Name="LuaBridgeUnitTests">
-      <File RelativePath="..\..\Source\Main.cpp"/>
-      <File RelativePath="..\..\Source\SpeedTests.h"/>
-      <File RelativePath="..\..\Source\SpeedTests.cpp"/>
-      <File RelativePath="..\..\Source\UnitTests.cpp">
-        <FileConfiguration Name="Debug|Win32"
-                           ExcludedFromBuild="true">
-          <Tool Name="VCCLCompilerTool"/>
-        </FileConfiguration>
-        <FileConfiguration Name="Release|Win32"
-                           ExcludedFromBuild="true">
-          <Tool Name="VCCLCompilerTool"/>
-        </FileConfiguration>
-      </File>
-      <File RelativePath="..\..\Source\UnitTests.h"/>
-      <File RelativePath="..\..\Source\UnitTests.lua">
-        <FileConfiguration Name="Debug|Win32"
-                           ExcludedFromBuild="true">
-          <Tool Name="VCCLCompilerTool"/>
-        </FileConfiguration>
-        <FileConfiguration Name="Release|Win32"
-                           ExcludedFromBuild="true">
-          <Tool Name="VCCLCompilerTool"/>
-        </FileConfiguration>
-      </File>
+      <Filter Name="Docs">
+        <File RelativePath="..\..\Externals\LuaBridge\CHANGES">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\Externals\LuaBridge\Doxyfile">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\Externals\LuaBridge\README.md">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+      </Filter>
+      <Filter Name="LuaBridge">
+        <File RelativePath="..\..\Externals\LuaBridge\LuaBridge.h"/>
+        <File RelativePath="..\..\Externals\LuaBridge\LuaBridgeExtras.h"/>
+        <File RelativePath="..\..\Externals\LuaBridge\RefCountedObject.h"/>
+        <File RelativePath="..\..\Externals\LuaBridge\RefCountedPtr.h"/>
+      </Filter>
       <Filter Name="LuaUnityBuild">
         <File RelativePath="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp"/>
         <File RelativePath="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
         <File RelativePath="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
+      </Filter>
+      <Filter Name="Source">
+        <File RelativePath="..\..\Source\Main.cpp"/>
+        <File RelativePath="..\..\Source\SpeedTests.cpp"/>
+        <File RelativePath="..\..\Source\SpeedTests.h"/>
+        <File RelativePath="..\..\Source\UnitTests.cpp">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\Source\UnitTests.h"/>
+        <File RelativePath="..\..\Source\UnitTests.lua">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
       </Filter>
     </Filter>
     <Filter Name="Juce Library Code">

@@ -43,10 +43,10 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
-  $(OBJDIR)/Main_90ebc5c2.o \
-  $(OBJDIR)/SpeedTests_ecaa6aa3.o \
   $(OBJDIR)/LuaUnityBuild_5.1.5_45aafb79.o \
   $(OBJDIR)/LuaUnityBuild_5.2.1_7a58d8b6.o \
+  $(OBJDIR)/Main_90ebc5c2.o \
+  $(OBJDIR)/SpeedTests_ecaa6aa3.o \
   $(OBJDIR)/BinaryData_e2bc246d.o \
 
 .PHONY: clean
@@ -68,16 +68,6 @@ strip:
 	@echo Stripping LuaBridgeUnitTests
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
 
-$(OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling Main.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
-
-$(OBJDIR)/SpeedTests_ecaa6aa3.o: ../../Source/SpeedTests.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling SpeedTests.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
-
 $(OBJDIR)/LuaUnityBuild_5.1.5_45aafb79.o: ../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.1.5.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling LuaUnityBuild_5.1.5.cpp"
@@ -86,6 +76,16 @@ $(OBJDIR)/LuaUnityBuild_5.1.5_45aafb79.o: ../../Externals/LuaUnityBuild/Source/L
 $(OBJDIR)/LuaUnityBuild_5.2.1_7a58d8b6.o: ../../Externals/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling LuaUnityBuild_5.2.1.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling Main.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/SpeedTests_ecaa6aa3.o: ../../Source/SpeedTests.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling SpeedTests.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/BinaryData_e2bc246d.o: ../Jucer/JuceLibraryCode/BinaryData.cpp
