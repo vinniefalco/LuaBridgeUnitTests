@@ -70,14 +70,6 @@
                        headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
       </CONFIGURATIONS>
     </XCODE_MAC>
-    <XCODE_IPHONE targetFolder="../iOS" juceFolder="">
-      <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" iosCompatibility="default" isDebug="1" optimisation="1"
-                       targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
-        <CONFIGURATION name="Release" iosCompatibility="default" isDebug="0" optimisation="2"
-                       targetName="LuaBridgeUnitTests" headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
-      </CONFIGURATIONS>
-    </XCODE_IPHONE>
   </EXPORTFORMATS>
   <JUCEOPTIONS/>
 </JUCERPROJECT>
