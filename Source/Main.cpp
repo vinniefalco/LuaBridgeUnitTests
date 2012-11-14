@@ -48,10 +48,142 @@
 #include "UnitTests.h"
 #include "UnitTests.cpp"
 
-using namespace std;
+//==============================================================================
+
+class Test
+{
+public:
+  Test ()
+    : m_L (luaL_newstate ())
+    , m_refErrFunc (LuaBridgeTests::addTraceback (m_L))
+  {
+    luaL_openlibs (m_L);
+
+    using namespace luabridge;
+    getGlobalNamespace (m_L)
+      .beginClass <ProfileBase> ("ProfileBase")
+        .addFunction ("increment_a_base", &ProfileBase::increment_a_base)
+        .addFunction ("virtual_func", &ProfileBase::virtual_func)
+        .addFunction ("pure_virtual_func", &ProfileBase::pure_virtual_func)
+      .endClass()
+      .beginClass<ProfileAnotherBase>("ProfileAnotherBase")
+        .addConstructor<void(*)(void)>()
+      .endClass()
+      .deriveClass <ProfileDerived, ProfileBase> ("ProfileDerived")
+        .addConstructor<void(*)(void)>()
+      .endClass()
+      ;
+  }
+
+  ~Test ()
+  {
+    lua_close (m_L);
+  }
+
+  int operator() ()
+  {
+    int result = 0;
+
+    using namespace std;
+
+    if (luaL_loadstring (m_L, getLua ()) != 0)
+    {
+      // compile-time error
+      cerr << lua_tostring (m_L, -1) << endl;
+      result = 1;
+    }
+    else if (lua_pcall (m_L, 0, 0, m_refErrFunc) != 0)
+    {
+      // runtime error
+      cerr << lua_tostring (m_L, -1) << endl;
+      result = 1;
+    }
+
+    return result;
+  }
+
+private:
+  class ProfileBase
+  {
+  public:
+    ProfileBase():_i(0){}
+    virtual ~ProfileBase(){}
+    void increment_a_base(ProfileBase* base)
+    {
+      ++base->_i;
+    }
+    virtual void virtual_func()
+    {
+      ++_i;
+    }
+    virtual void pure_virtual_func() = 0;
+  private:
+    int _i;
+  };
+
+  class ProfileAnotherBase
+  {
+  public:
+    virtual ~ProfileAnotherBase(){}
+  };
+  class ProfileDerived : public ProfileBase
+  {
+  public:
+    virtual ~ProfileDerived(){}
+    virtual void pure_virtual_func()
+    {
+      ++_i;
+    }
+  private:
+    int _i;
+  };
+
+  class ProfileMultiBases : public ProfileDerived, public ProfileAnotherBase
+  {
+  public:
+    void virtual_func()
+    {
+      ++_i;
+    }
+  private:
+    int _i;
+  };
+
+  static char const* getLua ()
+  {
+    return
+      "\
+      local N = 10 \
+      local ave = 0 \
+      local times = 1000 \
+      for i = 0, N do \
+      local obj = ProfileDerived() \
+      local increment_me = ProfileDerived() \
+      local t0 = os.clock() \
+      for i=1,times do \
+      obj:increment_a_base(increment_me) \
+      end \
+      local dt = os.clock()-t0 \
+      if i~=0 then \
+      ave = ave + dt \
+      end \
+      end \
+      print('Luabridge passing derived to a function that wants a base (average elapsed time):',ave/N) \
+      ";
+  }
+
+  lua_State* m_L;
+  int m_refErrFunc;
+};
+
+//==============================================================================
 
 int main (int, char **)
 {
+  using namespace std;
+
+  Test () ();
+
   lua_State* L = luaL_newstate ();
 
   luaL_openlibs (L);
