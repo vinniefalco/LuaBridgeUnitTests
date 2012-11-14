@@ -98,6 +98,7 @@
 				EFD0EB44D576D4C164447AF1,
 				AB17DDBAD8124FAB8E7BA7DD ); name = Source; sourceTree = "<group>"; };
 		919E956FF8569E7E424145C9 = { isa = XCBuildConfiguration; buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Externals ../../Externals/LuaUnityBuild/Source $(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
@@ -107,7 +108,6 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				COMBINE_HIDPI_IMAGES = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (

@@ -87,7 +87,7 @@
     </LINUX_MAKE>
     <XCODE_MAC targetFolder="../MacOSX" juceFolder="">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="64BitIntel"
                        isDebug="1" optimisation="1" targetName="LuaBridgeUnitTests"
                        headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
         <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="64BitIntel"
