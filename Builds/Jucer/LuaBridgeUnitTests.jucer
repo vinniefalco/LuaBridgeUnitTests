@@ -90,7 +90,7 @@
         <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
                        isDebug="1" optimisation="1" targetName="LuaBridgeUnitTests"
                        headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
-        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="64BitIntel"
                        isDebug="0" optimisation="2" targetName="LuaBridgeUnitTests"
                        headerPath="../../Externals&#10;../../Externals/LuaUnityBuild/Source&#10;"/>
       </CONFIGURATIONS>

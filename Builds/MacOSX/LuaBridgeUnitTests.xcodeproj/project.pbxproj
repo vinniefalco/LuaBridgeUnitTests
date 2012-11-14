@@ -115,6 +115,7 @@
 				"DEBUG=1",
 				"JUCER_XCODE_MAC_8DF12694=1"); }; name = Debug; };
 		D5DC9847C35B9D398F43C6F4 = { isa = XCBuildConfiguration; buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Externals ../../Externals/LuaUnityBuild/Source $(inherited)";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = Info.plist;
