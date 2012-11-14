@@ -11,6 +11,9 @@
     <Filter Include="LuaBridgeUnitTests\LuaBridge">
       <UniqueIdentifier>{63CDC5CE-569E-94AE-1199-45108F993100}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LuaBridgeUnitTests\LuaBridge\detail">
+      <UniqueIdentifier>{0F0BB2E9-834B-EC87-BBE2-B238E41577FD}</UniqueIdentifier>
+    </Filter>
     <Filter Include="LuaBridgeUnitTests\LuaUnityBuild">
       <UniqueIdentifier>{C2FEC07B-BF72-54A4-AF56-9A4783EABFA8}</UniqueIdentifier>
     </Filter>
@@ -22,6 +25,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridge.cpp">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp">
       <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
     </ClCompile>
@@ -42,47 +48,47 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Externals\LuaBridge\Constructor.h">
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\LuaBridge.h">
       <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\FuncTraits.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaBridge.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaPop.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaBridgeExtras.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaException.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaVal.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaHelpers.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaPop.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaRef.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaVal.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeInfo.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\RefCountedObject.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\RefCountedPtr.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\Stack.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\TypeInfo.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\TypeList.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h">
       <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>

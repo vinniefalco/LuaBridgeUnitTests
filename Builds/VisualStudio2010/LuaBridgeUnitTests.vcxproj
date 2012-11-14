@@ -55,7 +55,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Externals;../../Externals/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Externals/LuaBridge/Source;../../Externals/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCER_VS2010_2B5CCFA2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -94,7 +94,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MinSpace</Optimization>
-      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Externals;../../Externals/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Externals/LuaBridge/Source;../../Externals/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;WIN32;_WINDOWS;NDEBUG;JUCER_VS2010_2B5CCFA2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -126,6 +126,9 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridge.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp"/>
     <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
@@ -136,20 +139,20 @@
     <ClCompile Include="..\Jucer\JuceLibraryCode\BinaryData.cpp"/>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Externals\LuaBridge\Constructor.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\FuncTraits.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaBridge.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaBridgeExtras.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaException.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaHelpers.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaPop.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaRef.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\LuaVal.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\RefCountedObject.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\RefCountedPtr.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\Stack.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\TypeInfo.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\TypeList.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaPop.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaVal.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeInfo.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
     <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
     <ClInclude Include="..\..\Source\SpeedTests.h"/>
     <ClInclude Include="..\..\Source\UnitTests.h"/>

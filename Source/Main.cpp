@@ -40,7 +40,6 @@
 #include "LuaUnityBuild/LuaUnityBuild.h"
 
 #include "LuaBridge/LuaBridge.h"
-#include "LuaBridge/RefCountedPtr.h"
 
 #include "BinaryData.h"
 #include "SpeedTests.h"
@@ -302,7 +301,7 @@ int main (int, char **)
     return 1;
   }
 
-  runSpeedTests ();
+  //runSpeedTests ();
 
   lua_close(L);
   return 0;

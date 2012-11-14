@@ -41,7 +41,6 @@
 #include "LuaUnityBuild/LuaUnityBuild.h"
 
 #include "LuaBridge/LuaBridge.h"
-#include "LuaBridge/RefCountedPtr.h"
 
 #include "BinaryData.h"
 #include "SpeedTests.h"
