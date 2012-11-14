@@ -50,10 +50,104 @@
 
 //==============================================================================
 
-class Test
+class Test1
 {
 public:
-  Test ()
+  Test1 ()
+    : m_L (luaL_newstate ())
+    , m_refErrFunc (LuaBridgeTests::addTraceback (m_L))
+  {
+    luaL_openlibs (m_L);
+
+    using namespace luabridge;
+
+    getGlobalNamespace (m_L)
+      .beginClass <Set_get> ("Set_get")
+        .addConstructor<void(*)(void)> ()
+        .addFunction ("set", &Set_get::set)
+        .addFunction ("get", &Set_get::get)
+      .endClass ();
+  }
+
+  ~Test1 ()
+  {
+    lua_close (m_L);
+  }
+
+  int operator() ()
+  {
+    int result = 0;
+
+    using namespace std;
+
+    if (luaL_loadstring (m_L, getLua ()) != 0)
+    {
+      // compile-time error
+      cerr << lua_tostring (m_L, -1) << endl;
+      result = 1;
+    }
+    else if (lua_pcall (m_L, 0, 0, m_refErrFunc) != 0)
+    {
+      // runtime error
+      cerr << lua_tostring (m_L, -1) << endl;
+      result = 1;
+    }
+
+    return result;
+  }
+
+private:
+  class Set_get
+  {
+  public:
+    Set_get():_i(0.0){}
+    void set(double i)
+    {
+      _i = i;
+    }
+    double get()const
+    {
+      return _i;
+    }
+  private:
+    double _i;
+  };
+
+  static char const* getLua ()
+  {
+    return
+      "\
+      local N = 10 \
+      local ave = 0 \
+      local times = 1000 \
+      for i = 0, N do \
+      local obj = Set_get() \
+      local t0 = os.clock() \
+      for i=1,times do \
+      obj:set(i) \
+      if(obj:get() ~= i)then \
+      error('failed') \
+      end \
+      end \
+      local dt = os.clock()-t0 \
+      if i~=0 then \
+      ave = ave + dt \
+      end \
+      end \
+      print('LuaBridge access (average elapsed time):',ave/N) \
+      ";
+  }
+
+  lua_State* m_L;
+  int m_refErrFunc;
+};
+
+//==============================================================================
+
+class Test2
+{
+public:
+  Test2 ()
     : m_L (luaL_newstate ())
     , m_refErrFunc (LuaBridgeTests::addTraceback (m_L))
   {
@@ -75,7 +169,7 @@ public:
       ;
   }
 
-  ~Test ()
+  ~Test2 ()
   {
     lua_close (m_L);
   }
@@ -182,7 +276,7 @@ int main (int, char **)
 {
   using namespace std;
 
-  Test () ();
+  Test1 () ();
 
   lua_State* L = luaL_newstate ();
 
