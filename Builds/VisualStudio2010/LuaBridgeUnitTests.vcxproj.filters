@@ -42,16 +42,46 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Externals\LuaBridge\Constructor.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\FuncTraits.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\LuaBridge.h">
       <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\LuaBridgeExtras.h">
       <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaException.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaHelpers.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaPop.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaRef.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaVal.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\RefCountedObject.h">
       <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\RefCountedPtr.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\Stack.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\TypeInfo.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\TypeList.h">
       <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h">

@@ -6,15 +6,6 @@
 
 namespace BinaryData
 {
-    extern const char*   CHANGES;
-    const int            CHANGESSize = 678;
-
-    extern const char*   Doxyfile;
-    const int            DoxyfileSize = 78384;
-
-    extern const char*   README_md;
-    const int            README_mdSize = 32694;
-
     extern const char*   UnitTests_lua;
     const int            UnitTests_luaSize = 3877;
 

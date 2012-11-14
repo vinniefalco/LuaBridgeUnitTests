@@ -5,17 +5,27 @@
               jucerVersion="3.0.0">
   <MAINGROUP id="C25QV2" name="LuaBridgeUnitTests">
     <GROUP id="{95CA99FB-DF17-22B1-86CF-AE816D4E4DC8}" name="Docs">
-      <FILE id="IfyDHx" name="CHANGES" compile="0" resource="1" file="../../Externals/LuaBridge/CHANGES"/>
-      <FILE id="TpeSpX" name="Doxyfile" compile="0" resource="1" file="../../Externals/LuaBridge/Doxyfile"/>
-      <FILE id="A4rB0H" name="README.md" compile="0" resource="1" file="../../Externals/LuaBridge/README.md"/>
+      <FILE id="IfyDHx" name="CHANGES" compile="0" resource="0" file="../../Externals/LuaBridge/CHANGES"/>
+      <FILE id="TpeSpX" name="Doxyfile" compile="0" resource="0" file="../../Externals/LuaBridge/Doxyfile"/>
+      <FILE id="A4rB0H" name="README.md" compile="0" resource="0" file="../../Externals/LuaBridge/README.md"/>
     </GROUP>
     <GROUP id="{0F361A05-4DCF-BC29-E66B-C2825F18B42F}" name="LuaBridge">
+      <FILE id="JGfKO6" name="Constructor.h" compile="0" resource="0" file="../../Externals/LuaBridge/Constructor.h"/>
+      <FILE id="Gw6BcM" name="FuncTraits.h" compile="0" resource="0" file="../../Externals/LuaBridge/FuncTraits.h"/>
       <FILE id="KGY9il" name="LuaBridge.h" compile="0" resource="0" file="../../Externals/LuaBridge/LuaBridge.h"/>
       <FILE id="NKIMs5" name="LuaBridgeExtras.h" compile="0" resource="0"
             file="../../Externals/LuaBridge/LuaBridgeExtras.h"/>
+      <FILE id="BJTjDI" name="LuaException.h" compile="0" resource="0" file="../../Externals/LuaBridge/LuaException.h"/>
+      <FILE id="SfB33S" name="LuaHelpers.h" compile="0" resource="0" file="../../Externals/LuaBridge/LuaHelpers.h"/>
+      <FILE id="r3A3gB" name="LuaPop.h" compile="0" resource="0" file="../../Externals/LuaBridge/LuaPop.h"/>
+      <FILE id="yZ1fj4" name="LuaRef.h" compile="0" resource="0" file="../../Externals/LuaBridge/LuaRef.h"/>
+      <FILE id="MZNHG7" name="LuaVal.h" compile="0" resource="0" file="../../Externals/LuaBridge/LuaVal.h"/>
       <FILE id="DCiD7X" name="RefCountedObject.h" compile="0" resource="0"
             file="../../Externals/LuaBridge/RefCountedObject.h"/>
       <FILE id="L0gcQH" name="RefCountedPtr.h" compile="0" resource="0" file="../../Externals/LuaBridge/RefCountedPtr.h"/>
+      <FILE id="mYbg7i" name="Stack.h" compile="0" resource="0" file="../../Externals/LuaBridge/Stack.h"/>
+      <FILE id="jOCRyt" name="TypeInfo.h" compile="0" resource="0" file="../../Externals/LuaBridge/TypeInfo.h"/>
+      <FILE id="lfgApo" name="TypeList.h" compile="0" resource="0" file="../../Externals/LuaBridge/TypeList.h"/>
     </GROUP>
     <GROUP id="{5F290C50-B652-0A19-2155-C4B62719F137}" name="LuaUnityBuild">
       <FILE id="wyhbTt" name="LuaUnityBuild_5.1.5.cpp" compile="1" resource="0"

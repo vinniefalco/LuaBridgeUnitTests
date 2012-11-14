@@ -136,10 +136,20 @@
     <ClCompile Include="..\Jucer\JuceLibraryCode\BinaryData.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Externals\LuaBridge\Constructor.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\FuncTraits.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\LuaBridge.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\LuaBridgeExtras.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaException.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaHelpers.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaPop.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaRef.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\LuaVal.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\RefCountedObject.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\RefCountedPtr.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Stack.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\TypeInfo.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\TypeList.h"/>
     <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
     <ClInclude Include="..\..\Source\SpeedTests.h"/>
     <ClInclude Include="..\..\Source\UnitTests.h"/>
