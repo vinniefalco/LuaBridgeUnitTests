@@ -137,6 +137,9 @@
       <Filter Name="LuaBridge">
         <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
         <Filter Name="detail">
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridge.cpp">
             <FileConfiguration Name="Debug|Win32"
                                ExcludedFromBuild="true">
@@ -147,6 +150,8 @@
               <Tool Name="VCCLCompilerTool"/>
             </FileConfiguration>
           </File>
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaPop.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
@@ -156,10 +161,7 @@
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeInfo.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Userdata.h"/>
         </Filter>
       </Filter>
       <Filter Name="LuaUnityBuild">

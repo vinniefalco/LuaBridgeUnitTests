@@ -162,8 +162,6 @@ protected:
 
 //------------------------------------------------------------------------------
 
-//==============================================================================
-
 class Test1 : public TestBase
 {
 public:
@@ -610,6 +608,41 @@ int Test3::A::testStaticProp = 47;
 Test3::fn_called Test3::A_functions;
 Test3::fn_called Test3::B_functions;
 
+//------------------------------------------------------------------------------
+
+class Test4 : public TestBase
+{
+public:
+  Test4 () : TestBase ("LuaRef and LuaVal")
+  {
+  }
+
+  int runNativeCode ()
+  {
+    int result = 0;
+
+    using namespace luabridge;
+
+    LuaRef func1 (m_L, "func1");
+
+    double retval = func1 ();
+
+    std::cout << "retval = " << retval << std::endl;
+
+    return result;
+  }
+
+private:
+  char const* getMainChunk ()
+  {
+    return "\
+      function func1 () \
+        return 42 \
+      end \
+           ";
+  }
+};
+
 //==============================================================================
 
 int main (int, char **)
@@ -619,6 +652,7 @@ int main (int, char **)
   Test1 () ();
   Test2 () ();
   Test3 () ();
+  Test4 () ();
 
   runSpeedTests ();
 
