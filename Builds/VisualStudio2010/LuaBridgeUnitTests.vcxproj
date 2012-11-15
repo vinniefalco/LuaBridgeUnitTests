@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\CFunctions.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
@@ -149,8 +150,8 @@
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h"/>
-    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeInfo.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeTraits.h"/>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Userdata.h"/>
     <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
     <ClInclude Include="..\..\Source\SpeedTests.h"/>

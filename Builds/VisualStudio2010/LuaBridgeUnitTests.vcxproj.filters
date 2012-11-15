@@ -48,6 +48,9 @@
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\LuaBridge.h">
       <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\CFunctions.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\ClassInfo.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
@@ -84,10 +87,10 @@
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeInfo.h">
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h">
+    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeTraits.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Userdata.h">

@@ -137,6 +137,7 @@
       <Filter Name="LuaBridge">
         <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
         <Filter Name="detail">
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\CFunctions.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
@@ -159,8 +160,8 @@
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeInfo.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
+          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeTraits.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Userdata.h"/>
         </Filter>
       </Filter>
