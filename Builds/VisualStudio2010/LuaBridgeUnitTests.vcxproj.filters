@@ -40,9 +40,6 @@
     <ClCompile Include="..\..\Source\SpeedTests.cpp">
       <Filter>LuaBridgeUnitTests\Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\UnitTests.cpp">
-      <Filter>LuaBridgeUnitTests\Source</Filter>
-    </ClCompile>
     <ClCompile Include="..\Jucer\JuceLibraryCode\BinaryData.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
@@ -94,9 +91,6 @@
       <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SpeedTests.h">
-      <Filter>LuaBridgeUnitTests\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\UnitTests.h">
       <Filter>LuaBridgeUnitTests\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h">

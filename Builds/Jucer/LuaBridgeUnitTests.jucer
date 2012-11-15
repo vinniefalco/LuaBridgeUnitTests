@@ -41,8 +41,6 @@
       <FILE id="LvhMbv" name="Main.cpp" compile="1" resource="0" file="../../Source/Main.cpp"/>
       <FILE id="et2YhB" name="SpeedTests.cpp" compile="1" resource="0" file="../../Source/SpeedTests.cpp"/>
       <FILE id="jkxX3i" name="SpeedTests.h" compile="0" resource="0" file="../../Source/SpeedTests.h"/>
-      <FILE id="V3rLcF" name="UnitTests.cpp" compile="0" resource="0" file="../../Source/UnitTests.cpp"/>
-      <FILE id="qb21cU" name="UnitTests.h" compile="0" resource="0" file="../../Source/UnitTests.h"/>
       <FILE id="Jekyv4" name="UnitTests.lua" compile="0" resource="1" file="../../Source/UnitTests.lua"/>
     </GROUP>
   </MAINGROUP>

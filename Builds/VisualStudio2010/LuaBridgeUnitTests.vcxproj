@@ -133,9 +133,6 @@
     <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
     <ClCompile Include="..\..\Source\SpeedTests.cpp"/>
-    <ClCompile Include="..\..\Source\UnitTests.cpp">
-      <ExcludedFromBuild>true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\Jucer\JuceLibraryCode\BinaryData.cpp"/>
   </ItemGroup>
   <ItemGroup>
@@ -155,7 +152,6 @@
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
     <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
     <ClInclude Include="..\..\Source\SpeedTests.h"/>
-    <ClInclude Include="..\..\Source\UnitTests.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\BinaryData.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\JuceHeader.h"/>
