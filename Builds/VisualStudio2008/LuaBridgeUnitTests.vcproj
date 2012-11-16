@@ -141,22 +141,11 @@
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridge.cpp">
-            <FileConfiguration Name="Debug|Win32"
-                               ExcludedFromBuild="true">
-              <Tool Name="VCCLCompilerTool"/>
-            </FileConfiguration>
-            <FileConfiguration Name="Release|Win32"
-                               ExcludedFromBuild="true">
-              <Tool Name="VCCLCompilerTool"/>
-            </FileConfiguration>
-          </File>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaPop.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaVal.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h"/>

@@ -16,14 +16,12 @@
         <FILE id="KXlgy9" name="ClassInfo.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/ClassInfo.h"/>
         <FILE id="C1hgBJ" name="Constructor.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/Constructor.h"/>
         <FILE id="K2VjcD" name="FuncTraits.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/FuncTraits.h"/>
-        <FILE id="QjKagr" name="LuaBridge.cpp" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaBridge.cpp"/>
         <FILE id="n6bMwo" name="LuaBridgeExtras.h" compile="0" resource="0"
               file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaBridgeExtras.h"/>
         <FILE id="W6Cuk9" name="LuaException.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaException.h"/>
         <FILE id="rKcwsR" name="LuaHelpers.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaHelpers.h"/>
         <FILE id="wQT2xD" name="LuaPop.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaPop.h"/>
         <FILE id="k1FKSc" name="LuaRef.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaRef.h"/>
-        <FILE id="aMaoyf" name="LuaVal.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaVal.h"/>
         <FILE id="vtkf88" name="RefCountedObject.h" compile="0" resource="0"
               file="../../Externals/LuaBridge/Source/LuaBridge/detail/RefCountedObject.h"/>
         <FILE id="bHR8hD" name="RefCountedPtr.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/RefCountedPtr.h"/>

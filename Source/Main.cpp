@@ -644,11 +644,12 @@ public:
         LuaRef f (m_L, "areEqual");
 
         t[1] = 2;
-        f (2, 2);
+        f (t[1], 2);
         t[1] = 3;
-        f (3, 3);
+        f (3, t[1]);
         t[2] = "hey";
-        f ("hey", "hey");
+        f (t[2], "hey");
+        //f ("hey", "hey");
       }
     }
     catch (std::exception const& e)
