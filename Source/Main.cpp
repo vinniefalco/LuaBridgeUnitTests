@@ -617,18 +617,46 @@ public:
   {
   }
 
+  static int cfunc (lua_State* L)
+  {
+    int nret = 0;
+    lua_pushstring (L, "cfunc error");
+    lua_error (L);
+    return nret;
+  }
+
   int runNativeCode ()
   {
     int result = 0;
 
+    using namespace std;
     using namespace luabridge;
 
-    LuaRef func1 (m_L, "func1");
+    try
+    {
+      {
+        LuaRef (m_L, "areEqual") (2, 2);
+      }
 
-    double retval = func1 ();
+      {
+        LuaRef t (LuaRef::createTable (m_L));
 
-    std::cout << "retval = " << retval << std::endl;
+        LuaRef f (m_L, "areEqual");
 
+        t[1] = 2;
+        f (2, 2);
+        t[1] = 3;
+        f (3, 3);
+        t[2] = "hey";
+        f ("hey", "hey");
+      }
+    }
+    catch (std::exception const& e)
+    {
+      cout << e.what () << endl;
+    }
+
+    
     return result;
   }
 
@@ -636,9 +664,12 @@ private:
   char const* getMainChunk ()
   {
     return "\
-      function func1 () \
-        return 42 \
-      end \
+      function assert (expr) \n\
+        if (not expr) then error('assert failed', 2) end \n\
+      end \n\
+      function areEqual (v1, v2) \n\
+        assert(v1==v2) \n\
+      end \n\
            ";
   }
 };
