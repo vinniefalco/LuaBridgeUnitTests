@@ -632,6 +632,10 @@ public:
     using namespace std;
     using namespace luabridge;
 
+    {
+      lua_rawgeti (m_L, LUA_REGISTRYINDEX, LUA_NOREF);
+    }
+
     try
     {
       {
