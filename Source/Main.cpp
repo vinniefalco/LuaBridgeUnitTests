@@ -610,11 +610,29 @@ Test3::fn_called Test3::B_functions;
 
 //------------------------------------------------------------------------------
 
+/** Verify a test condition.
+*/
+#define ASSURE(cond) (void)((cond)||(fail(#cond,__FILE__,__LINE__),0))
+/**
+    Tests of LuaRef
+*/
 class Test4 : public TestBase
 {
 public:
-  Test4 () : TestBase ("LuaRef and LuaVal")
+  Test4 () : TestBase ("LuaRef")
   {
+  }
+
+  /** Called when a test condition evaluates to false.
+  */
+  void fail (char const* cond, char const* file, int line)
+  {
+    file;
+    line;
+
+    using namespace std;
+
+    cout << cond << endl;
   }
 
   static int cfunc (lua_State* L)
@@ -632,16 +650,26 @@ public:
     using namespace std;
     using namespace luabridge;
 
-    {
-      lua_rawgeti (m_L, LUA_REGISTRYINDEX, LUA_NOREF);
-    }
+    LuaRef eq (m_L, "areEqual");      // get ref to func
+    ASSURE (eq.isFunction ());        // make sure its a func
+    ASSURE (eq (1, 1));               // integer equality
+    ASSURE (!eq (1, 2));              // integer inequality
+    ASSURE (eq (3., 3.));             // float equality
+    ASSURE (!eq (3., 4.));            // float inequality
+
+    LuaRef v (m_L);
+    v = 1;                            // assign integer
+    ASSURE (v.cast <int> () == 1);
+    ASSURE (eq (v, 1));
+
+    // tables
+    LuaRef t (LuaRef::createTable (m_L));
+    ASSURE (t.isTable ());            // make sure its a table
+    t [1] = 1;
+    ASSURE (eq (t[1], 1));
 
     try
     {
-      {
-        LuaRef (m_L, "areEqual") (2, 2);
-      }
-
       {
         LuaRef t (LuaRef::createTable (m_L));
 
@@ -673,7 +701,7 @@ private:
         if (not expr) then error('assert failed', 2) end \n\
       end \n\
       function areEqual (v1, v2) \n\
-        assert(v1==v2) \n\
+        return v1 == v2 \n\
       end \n\
            ";
   }
@@ -694,3 +722,18 @@ int main (int, char **)
 
   return 0;
 }
+
+// This code snippet fails to compile in vs2010
+#if 0
+struct S
+{
+  template <class T> inline operator T () const { return T (); }
+};
+
+int main ()
+{
+  S () || false;
+
+  return 0;
+}
+#endif
