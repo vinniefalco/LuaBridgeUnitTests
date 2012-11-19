@@ -67,6 +67,11 @@ public:
     lua_close (m_L);
   }
 
+  lua_State* state () const
+  {
+    return m_L;
+  }
+
   /** Run the test.
   */
   int operator() ()
@@ -938,9 +943,33 @@ Test3::fn_called Test3::B_functions;
 */
 class Test4 : public TestBase
 {
+private:
+  struct A
+  {
+    A ()
+    {
+    }
+
+    virtual ~A ()
+    {
+    }
+
+    virtual char const* name () const
+    {
+      return "A";
+    }
+  };
+
 public:
   Test4 () : TestBase ("LuaRef")
   {
+    using namespace luabridge;
+
+    getGlobalNamespace (m_L)
+      .beginClass <A> ("A")
+        .addConstructor <void (*) (void)> ()
+      .endClass ()
+      ;
   }
 
   /** Called when a test condition evaluates to false.
@@ -1034,6 +1063,22 @@ public:
     {
       cout << e.what () << endl;
     }
+
+    //--------------------------------------------------------------------------
+
+    // Tests for C++ objects registered to Lua
+
+    {
+      // Get constructor for A.
+      LuaRef c = LuaRef::getGlobal (state (), "A");
+
+      LuaRef result = c ();
+      int type = result.type ();
+      A* a = result;
+      ASSURE (eq (a->name (), "A").toBool ());
+    }
+
+    //--------------------------------------------------------------------------
 
     return result;
   }
