@@ -162,6 +162,324 @@ protected:
 
 //------------------------------------------------------------------------------
 
+/** Call all functions.
+
+    This makes sure all the templates compile.
+*/
+class Test1 : public TestBase
+{
+public:
+  static void f0 () { }
+  static void f1 (int) { }
+  static void f2 (int,int) { }
+  static void f3 (int,int,int) { }
+  static void f4 (int,int,int,int) { }
+  static void f5 (int,int,int,int,int) { }
+  static void f6 (int,int,int,int,int,int) { }
+  static void f7 (int,int,int,int,int,int,int) { }
+  static void f8 (int,int,int,int,int,int,int,int) { }
+
+  static int rf0 () { return 0; }
+  static int rf1 (int) { return 0; }
+  static int rf2 (int,int) { return 0; }
+  static int rf3 (int,int,int) { return 0; }
+  static int rf4 (int,int,int,int) { return 0; }
+  static int rf5 (int,int,int,int,int) { return 0; }
+  static int rf6 (int,int,int,int,int,int) { return 0; }
+  static int rf7 (int,int,int,int,int,int,int) { return 0; }
+  static int rf8 (int,int,int,int,int,int,int,int) { return 0; }
+
+#if defined (LUABRIDGE_THROWSPEC)
+  static void tf0 () LUABRIDGE_THROWSPEC { }
+  static void tf1 (int) LUABRIDGE_THROWSPEC { }
+  static void tf2 (int,int) LUABRIDGE_THROWSPEC { }
+  static void tf3 (int,int,int) LUABRIDGE_THROWSPEC { }
+  static void tf4 (int,int,int,int) LUABRIDGE_THROWSPEC { }
+  static void tf5 (int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+  static void tf6 (int,int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+  static void tf7 (int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+  static void tf8 (int,int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+
+  static int trf0 () LUABRIDGE_THROWSPEC { return 0; }
+  static int trf1 (int) LUABRIDGE_THROWSPEC { return 0; }
+  static int trf2 (int,int) LUABRIDGE_THROWSPEC { return 0; }
+  static int trf3 (int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  static int trf4 (int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  static int trf5 (int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  static int trf6 (int,int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  static int trf7 (int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  static int trf8 (int,int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+#endif
+
+  void m0 () { }
+  void m1 (int) { }
+  void m2 (int,int) { }
+  void m3 (int,int,int) { }
+  void m4 (int,int,int,int) { }
+  void m5 (int,int,int,int,int) { }
+  void m6 (int,int,int,int,int,int) { }
+  void m7 (int,int,int,int,int,int,int) { }
+  void m8 (int,int,int,int,int,int,int,int) { }
+
+  int rm0 () { return 0; }
+  int rm1 (int) { return 0; }
+  int rm2 (int,int) { return 0; }
+  int rm3 (int,int,int) { return 0; }
+  int rm4 (int,int,int,int) { return 0; }
+  int rm5 (int,int,int,int,int) { return 0; }
+  int rm6 (int,int,int,int,int,int) { return 0; }
+  int rm7 (int,int,int,int,int,int,int) { return 0; }
+  int rm8 (int,int,int,int,int,int,int,int) { return 0; }
+
+  void cm0 () const { }
+  void cm1 (int) const { }
+  void cm2 (int,int) const { }
+  void cm3 (int,int,int) const { }
+  void cm4 (int,int,int,int) const { }
+  void cm5 (int,int,int,int,int) const { }
+  void cm6 (int,int,int,int,int,int) const { }
+  void cm7 (int,int,int,int,int,int,int) const { }
+  void cm8 (int,int,int,int,int,int,int,int) const { }
+
+  int crm0 () const { return 0; }
+  int crm1 (int) const { return 0; }
+  int crm2 (int,int) const { return 0; }
+  int crm3 (int,int,int) const { return 0; }
+  int crm4 (int,int,int,int) const { return 0; }
+  int crm5 (int,int,int,int,int) const { return 0; }
+  int crm6 (int,int,int,int,int,int) const { return 0; }
+  int crm7 (int,int,int,int,int,int,int) const { return 0; }
+  int crm8 (int,int,int,int,int,int,int,int) const { return 0; }
+
+#if defined (LUABRIDGE_THROWSPEC)
+  void tm0 () LUABRIDGE_THROWSPEC { }
+  void tm1 (int) LUABRIDGE_THROWSPEC { }
+  void tm2 (int,int) LUABRIDGE_THROWSPEC { }
+  void tm3 (int,int,int) LUABRIDGE_THROWSPEC { }
+  void tm4 (int,int,int,int) LUABRIDGE_THROWSPEC { }
+  void tm5 (int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+  void tm6 (int,int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+  void tm7 (int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+  void tm8 (int,int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { }
+
+  int trm0 () LUABRIDGE_THROWSPEC { return 0; }
+  int trm1 (int) LUABRIDGE_THROWSPEC { return 0; }
+  int trm2 (int,int) LUABRIDGE_THROWSPEC { return 0; }
+  int trm3 (int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  int trm4 (int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  int trm5 (int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  int trm6 (int,int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  int trm7 (int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+  int trm8 (int,int,int,int,int,int,int,int) LUABRIDGE_THROWSPEC { return 0; }
+
+  void tcm0 () const LUABRIDGE_THROWSPEC { }
+  void tcm1 (int) const LUABRIDGE_THROWSPEC { }
+  void tcm2 (int,int) const LUABRIDGE_THROWSPEC { }
+  void tcm3 (int,int,int) const LUABRIDGE_THROWSPEC { }
+  void tcm4 (int,int,int,int) const LUABRIDGE_THROWSPEC { }
+  void tcm5 (int,int,int,int,int) const LUABRIDGE_THROWSPEC { }
+  void tcm6 (int,int,int,int,int,int) const LUABRIDGE_THROWSPEC { }
+  void tcm7 (int,int,int,int,int,int,int) const LUABRIDGE_THROWSPEC { }
+  void tcm8 (int,int,int,int,int,int,int,int) const LUABRIDGE_THROWSPEC { }
+
+  int tcrm0 () const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm1 (int) const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm2 (int,int) const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm3 (int,int,int) const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm4 (int,int,int,int) const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm5 (int,int,int,int,int) const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm6 (int,int,int,int,int,int) const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm7 (int,int,int,int,int,int,int) const LUABRIDGE_THROWSPEC { return 0; }
+  int tcrm8 (int,int,int,int,int,int,int,int) const LUABRIDGE_THROWSPEC { return 0; }
+#endif
+
+  Test1 () : TestBase ("Compile Check")
+  {
+    using namespace luabridge;
+
+    // Oddly, if there is a compile error in the body of FuncTraits<>::call,
+    // Visual Studio does not generate an error! Yet if the entire struct is
+    // omitted, a compile error results.
+    //
+    // This problem seems to appear and disappear...
+    //
+#if 0
+    getGlobalNamespace (m_L)
+      .beginNamespace ("test")
+        .addFunction ("trf8", &Test1::trf8)
+        .beginClass <Test1> ("test1")
+          .addFunction ("tcrm8", &Test1::tcrm8)
+        .endClass ()
+      .endNamespace ();
+#endif
+
+#if 1
+    getGlobalNamespace (m_L)
+      .beginNamespace ("test")
+        .addFunction ("f0",   &Test1::f0)
+        .addFunction ("f1",   &Test1::f1)
+        .addFunction ("f2",   &Test1::f2) 
+        .addFunction ("f3",   &Test1::f3)
+        .addFunction ("f4",   &Test1::f4)
+        .addFunction ("f5",   &Test1::f5)
+        .addFunction ("f6",   &Test1::f6)
+        .addFunction ("f7",   &Test1::f7)
+        .addFunction ("f8",   &Test1::f8)
+        .addFunction ("rf0",  &Test1::rf0)
+        .addFunction ("rf1",  &Test1::rf1)
+        .addFunction ("rf2",  &Test1::rf2)
+        .addFunction ("rf3",  &Test1::rf3)
+        .addFunction ("rf4",  &Test1::rf4)
+        .addFunction ("rf5",  &Test1::rf5)
+        .addFunction ("rf6",  &Test1::rf6)
+        .addFunction ("rf7",  &Test1::rf7)
+        .addFunction ("rf8",  &Test1::rf8)
+#if defined (LUABRIDGE_THROWSPEC)
+        .addFunction ("tf0",  &Test1::tf0)
+        .addFunction ("tf1",  &Test1::tf1)
+        .addFunction ("tf2",  &Test1::tf2)
+        .addFunction ("tf3",  &Test1::tf3)
+        .addFunction ("tf4",  &Test1::tf4)
+        .addFunction ("tf5",  &Test1::tf5)
+        .addFunction ("tf6",  &Test1::tf6)
+        .addFunction ("tf7",  &Test1::tf7)
+        .addFunction ("tf8",  &Test1::tf8)
+        .addFunction ("trf0", &Test1::trf0)
+        .addFunction ("trf1", &Test1::trf1)
+        .addFunction ("trf2", &Test1::trf2)
+        .addFunction ("trf3", &Test1::trf3)
+        .addFunction ("trf4", &Test1::trf4)
+        .addFunction ("trf5", &Test1::trf5)
+        .addFunction ("trf6", &Test1::trf6)
+        .addFunction ("trf7", &Test1::trf7)
+        .addFunction ("trf8", &Test1::trf8)
+#endif
+        .beginClass <Test1> ("test1")
+          .addFunction ("m0",   &Test1::m0)
+          .addFunction ("m1",   &Test1::m1)
+          .addFunction ("m2",   &Test1::m2)
+          .addFunction ("m3",   &Test1::m3)
+          .addFunction ("m4",   &Test1::m4)
+          .addFunction ("m5",   &Test1::m5)
+          .addFunction ("m6",   &Test1::m6)
+          .addFunction ("m7",   &Test1::m7)
+          .addFunction ("m8",   &Test1::m8)
+          .addFunction ("rm0",  &Test1::rm0)
+          .addFunction ("rm1",  &Test1::rm1)
+          .addFunction ("rm2",  &Test1::rm2)
+          .addFunction ("rm3",  &Test1::rm3)
+          .addFunction ("rm4",  &Test1::rm4)
+          .addFunction ("rm5",  &Test1::rm5)
+          .addFunction ("rm6",  &Test1::rm6)
+          .addFunction ("rm7",  &Test1::rm7)
+          .addFunction ("rm8",  &Test1::rm8)
+          .addFunction ("cm0",  &Test1::cm0)
+          .addFunction ("cm1",  &Test1::cm1)
+          .addFunction ("cm2",  &Test1::cm2)
+          .addFunction ("cm3",  &Test1::cm3)
+          .addFunction ("cm4",  &Test1::cm4)
+          .addFunction ("cm5",  &Test1::cm5)
+          .addFunction ("cm6",  &Test1::cm6)
+          .addFunction ("cm7",  &Test1::cm7)
+          .addFunction ("cm8",  &Test1::cm8)
+          .addFunction ("crm0", &Test1::crm0)
+          .addFunction ("crm1", &Test1::crm1)
+          .addFunction ("crm2", &Test1::crm2)
+          .addFunction ("crm3", &Test1::crm3)
+          .addFunction ("crm4", &Test1::crm4)
+          .addFunction ("crm5", &Test1::crm5)
+          .addFunction ("crm6", &Test1::crm6)
+          .addFunction ("crm7", &Test1::crm7)
+          .addFunction ("crm8", &Test1::crm8)
+#if defined (LUABRIDGE_THROWSPEC)
+          .addFunction ("tm0",   &Test1::tm0)
+          .addFunction ("tm1",   &Test1::tm1)
+          .addFunction ("tm2",   &Test1::tm2)
+          .addFunction ("tm3",   &Test1::tm3)
+          .addFunction ("tm4",   &Test1::tm4)
+          .addFunction ("tm5",   &Test1::tm5)
+          .addFunction ("tm6",   &Test1::tm6)
+          .addFunction ("tm7",   &Test1::tm7)
+          .addFunction ("tm8",   &Test1::tm8)
+          .addFunction ("trm0",  &Test1::trm0)
+          .addFunction ("trm1",  &Test1::trm1)
+          .addFunction ("trm2",  &Test1::trm2)
+          .addFunction ("trm3",  &Test1::trm3)
+          .addFunction ("trm4",  &Test1::trm4)
+          .addFunction ("trm5",  &Test1::trm5)
+          .addFunction ("trm6",  &Test1::trm6)
+          .addFunction ("trm7",  &Test1::trm7)
+          .addFunction ("trm8",  &Test1::trm8)
+          .addFunction ("tcm0",  &Test1::tcm0)
+          .addFunction ("tcm1",  &Test1::tcm1)
+          .addFunction ("tcm2",  &Test1::tcm2)
+          .addFunction ("tcm3",  &Test1::tcm3)
+          .addFunction ("tcm4",  &Test1::tcm4)
+          .addFunction ("tcm5",  &Test1::tcm5)
+          .addFunction ("tcm6",  &Test1::tcm6)
+          .addFunction ("tcm7",  &Test1::tcm7)
+          .addFunction ("tcm8",  &Test1::tcm8)
+          .addFunction ("tcrm0", &Test1::tcrm0)
+          .addFunction ("tcrm1", &Test1::tcrm1)
+          .addFunction ("tcrm2", &Test1::tcrm2)
+          .addFunction ("tcrm3", &Test1::tcrm3)
+          .addFunction ("tcrm4", &Test1::tcrm4)
+          .addFunction ("tcrm5", &Test1::tcrm5)
+          .addFunction ("tcrm6", &Test1::tcrm6)
+          .addFunction ("tcrm7", &Test1::tcrm7)
+          .addFunction ("tcrm8", &Test1::tcrm8)
+#endif
+          .endClass ()
+      .endNamespace ();
+#endif
+  }
+
+private:
+  class Set_get
+  {
+  public:
+    Set_get():_i(0.0){}
+    void set(double i)
+    {
+      _i = i;
+    }
+    double get()const
+    {
+      return _i;
+    }
+  private:
+    double _i;
+  };
+
+  char const* getMainChunk ()
+  {
+    return
+      "\
+      local N = 10 \
+      local ave = 0 \
+      local times = 1000 \
+      for i = 0, N do \
+      local obj = Set_get() \
+      local t0 = os.clock() \
+      for i=1,times do \
+      obj:set(i) \
+      if(obj:get() ~= i)then \
+      error('failed') \
+      end \
+      end \
+      local dt = os.clock()-t0 \
+      if i~=0 then \
+      ave = ave + dt \
+      end \
+      end \
+      print('LuaBridge access (average elapsed time):',ave/N) \
+      ";
+  }
+};
+
+//------------------------------------------------------------------------------
+
+#if 0
 class Test1 : public TestBase
 {
 public:
@@ -314,6 +632,7 @@ private:
       ";
   }
 };
+#endif
 
 //==============================================================================
 
@@ -610,6 +929,8 @@ Test3::fn_called Test3::B_functions;
 
 //------------------------------------------------------------------------------
 
+//------------------------------------------------------------------------------
+
 /** Verify a test condition.
 */
 #define ASSURE(cond) (void)((cond)||(fail(#cond,__FILE__,__LINE__),0))
@@ -650,6 +971,7 @@ public:
     using namespace std;
     using namespace luabridge;
 
+#if 0
     LuaRef eq (m_L, "areEqual");      // get ref to func
     ASSURE (eq.isFunction ());        // make sure its a func
     ASSURE (eq (1, 1));               // integer equality
@@ -688,7 +1010,7 @@ public:
     {
       cout << e.what () << endl;
     }
-
+#endif
     
     return result;
   }
@@ -714,7 +1036,6 @@ int main (int, char **)
   using namespace std;
 
   Test1 () ();
-  Test2 () ();
   Test3 () ();
   Test4 () ();
 
