@@ -970,13 +970,39 @@ public:
     using namespace std;
     using namespace luabridge;
 
-    LuaRef eq (m_L, "areEqual");      // get ref to func
+    // Global function
+    LuaRef eq = LuaRef::getGlobal (m_L, "areEqual");
+    ASSURE (eq.isFunction ());
+    ASSURE (eq (1, 1).toBool ());
+    ASSURE (!eq (1, 2).toBool ());
+    ASSURE (eq (3., 3.).toBool ());
+    ASSURE (!eq (3., 4.).toBool ());
+    ASSURE (eq ("a", "a").toBool ());
+    ASSURE (!eq ("a", "b").toBool ());
+    ASSURE (!eq (1, Nil ()).toBool ());
+    ASSURE (eq (Nil (), Nil ()).toBool ());
 
-    ASSURE (eq.isFunction ());        // make sure its a func
-    ASSURE (eq (1, 1).toBool ());     // integer equality
-    ASSURE (!eq (1, 2).toBool ());    // integer inequality
-    ASSURE (eq (3., 3.).toBool ());   // float equality
-    ASSURE (!eq (3., 4.).toBool ());  // float inequality
+    // Default constructor
+    {
+      LuaRef v (m_L);
+      ASSURE (v.isNil ());
+    }
+
+    // Conversion constructors
+    {
+      LuaRef v (m_L, Nil ());
+      ASSURE (v.isNil ());
+    }
+    {
+      LuaRef v (m_L, 1);
+      ASSURE (eq (v, 1.).toBool ());
+      ASSURE (!eq (v, 2.).toBool ());
+    }
+    {
+      LuaRef v (m_L, "a");
+      ASSURE (eq (v, "a").toBool ());
+    }
+
 
     LuaRef v (m_L);
     v = 1;                            // assign integer
@@ -988,7 +1014,10 @@ public:
     ASSURE (t.isTable ());            // make sure its a table
     t [1] = 1;
     ASSURE (eq (t[1], 1).cast <bool> ());
+    t [1] = Nil ();
+    ASSURE (LuaRef (t [1]).isNil ());
 
+    t = Nil ();
 #if 0
     try
     {
@@ -1046,15 +1075,12 @@ int main (int, char **)
 
 // This code snippet fails to compile in vs2010
 #if 0
-struct S
-{
+struct S {
   template <class T> inline operator T () const { return T (); }
 };
 
-int main ()
-{
+int main () {
   S () || false;
-
   return 0;
 }
 #endif
