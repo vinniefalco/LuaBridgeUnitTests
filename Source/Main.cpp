@@ -929,11 +929,10 @@ Test3::fn_called Test3::B_functions;
 
 //------------------------------------------------------------------------------
 
-//------------------------------------------------------------------------------
-
 /** Verify a test condition.
 */
 #define ASSURE(cond) (void)((cond)||(fail(#cond,__FILE__,__LINE__),0))
+
 /**
     Tests of LuaRef
 */
@@ -953,7 +952,7 @@ public:
 
     using namespace std;
 
-    cout << cond << endl;
+    cout << "FAIL: " << cond << endl;
   }
 
   static int cfunc (lua_State* L)
@@ -971,25 +970,26 @@ public:
     using namespace std;
     using namespace luabridge;
 
-#if 0
     LuaRef eq (m_L, "areEqual");      // get ref to func
+
     ASSURE (eq.isFunction ());        // make sure its a func
-    ASSURE (eq (1, 1));               // integer equality
-    ASSURE (!eq (1, 2));              // integer inequality
-    ASSURE (eq (3., 3.));             // float equality
-    ASSURE (!eq (3., 4.));            // float inequality
+    ASSURE (eq (1, 1).toBool ());     // integer equality
+    ASSURE (!eq (1, 2).toBool ());    // integer inequality
+    ASSURE (eq (3., 3.).toBool ());   // float equality
+    ASSURE (!eq (3., 4.).toBool ());  // float inequality
 
     LuaRef v (m_L);
     v = 1;                            // assign integer
     ASSURE (v.cast <int> () == 1);
-    ASSURE (eq (v, 1));
+    ASSURE (eq (v, 1).cast <bool> ());
 
     // tables
     LuaRef t (LuaRef::createTable (m_L));
     ASSURE (t.isTable ());            // make sure its a table
     t [1] = 1;
-    ASSURE (eq (t[1], 1));
+    ASSURE (eq (t[1], 1).cast <bool> ());
 
+#if 0
     try
     {
       {
@@ -1011,7 +1011,7 @@ public:
       cout << e.what () << endl;
     }
 #endif
-    
+
     return result;
   }
 
