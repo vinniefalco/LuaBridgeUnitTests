@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="LuaBridgeUnitTests">
@@ -24,9 +25,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridge.cpp">
-      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp">
       <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
     </ClCompile>
@@ -66,9 +64,6 @@
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaPop.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h">

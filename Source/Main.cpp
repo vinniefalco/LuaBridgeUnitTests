@@ -1039,7 +1039,7 @@ public:
     ASSURE (eq (v, 1).cast <bool> ());
 
     // tables
-    LuaRef t (LuaRef::createTable (m_L));
+    LuaRef t (LuaRef::newTable (m_L));
     ASSURE (t.isTable ());            // make sure its a table
     t [1] = 1;
     ASSURE (eq (t[1], 1).cast <bool> ());
@@ -1050,7 +1050,7 @@ public:
 
     try
     {
-      LuaRef t (LuaRef::createTable (m_L));
+      LuaRef t (LuaRef::newTable (m_L));
 
       t[1] = 2;
       eq (t[1], 2);

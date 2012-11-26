@@ -20,7 +20,6 @@
               file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaBridgeExtras.h"/>
         <FILE id="W6Cuk9" name="LuaException.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaException.h"/>
         <FILE id="rKcwsR" name="LuaHelpers.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaHelpers.h"/>
-        <FILE id="wQT2xD" name="LuaPop.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaPop.h"/>
         <FILE id="k1FKSc" name="LuaRef.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaRef.h"/>
         <FILE id="vtkf88" name="RefCountedObject.h" compile="0" resource="0"
               file="../../Externals/LuaBridge/Source/LuaBridge/detail/RefCountedObject.h"/>
