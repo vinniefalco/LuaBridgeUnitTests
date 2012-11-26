@@ -21,6 +21,7 @@
         <FILE id="W6Cuk9" name="LuaException.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaException.h"/>
         <FILE id="rKcwsR" name="LuaHelpers.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaHelpers.h"/>
         <FILE id="k1FKSc" name="LuaRef.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/LuaRef.h"/>
+        <FILE id="pGUenC" name="Namespace.h" compile="0" resource="0" file="../../externals/LuaBridge/Source/LuaBridge/detail/Namespace.h"/>
         <FILE id="vtkf88" name="RefCountedObject.h" compile="0" resource="0"
               file="../../Externals/LuaBridge/Source/LuaBridge/detail/RefCountedObject.h"/>
         <FILE id="bHR8hD" name="RefCountedPtr.h" compile="0" resource="0" file="../../Externals/LuaBridge/Source/LuaBridge/detail/RefCountedPtr.h"/>

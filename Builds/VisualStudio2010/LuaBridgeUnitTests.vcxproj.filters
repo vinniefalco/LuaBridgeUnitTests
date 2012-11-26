@@ -69,6 +69,9 @@
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\externals\LuaBridge\Source\LuaBridge\detail\Namespace.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>

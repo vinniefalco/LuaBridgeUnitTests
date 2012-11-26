@@ -145,6 +145,7 @@
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
+          <File RelativePath="..\..\externals\LuaBridge\Source\LuaBridge\detail\Namespace.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
           <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h"/>

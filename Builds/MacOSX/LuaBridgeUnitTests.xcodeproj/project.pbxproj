@@ -13,6 +13,7 @@
 		B93186D290483505D69ACC8A = { isa = PBXBuildFile; fileRef = F045039CE99A35C0EB6666CD; };
 		B69434BBDD9EC25A76EBC600 = { isa = PBXBuildFile; fileRef = 98D8F08CF9BA6CCD786A1899; };
 		E1912615ED6A9521CBEE2B3F = { isa = PBXBuildFile; fileRef = 7BC46BBE20054ADF9F4B8A74; };
+		0A1307C5798E504AF02D2178 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Namespace.h; path = ../../externals/LuaBridge/Source/LuaBridge/detail/Namespace.h; sourceTree = "SOURCE_ROOT"; };
 		0C14F46E4922E2812091184C = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RefCountedObject.h; path = ../../Externals/LuaBridge/Source/LuaBridge/detail/RefCountedObject.h; sourceTree = "SOURCE_ROOT"; };
 		11D7A09B6ED2F2E6F2847694 = { isa = PBXFileReference; lastKnownFileType = file; name = CHANGES; path = ../../Externals/LuaBridge/CHANGES; sourceTree = "SOURCE_ROOT"; };
 		33DED253D1A94A1BA952372B = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TypeList.h; path = ../../Externals/LuaBridge/Source/LuaBridge/detail/TypeList.h; sourceTree = "SOURCE_ROOT"; };
@@ -57,6 +58,7 @@
 				D2B296554444EEC90DFF5778,
 				944649B30300C260C5CE9BCE,
 				82F53325A1E929903F67B34C,
+				0A1307C5798E504AF02D2178,
 				0C14F46E4922E2812091184C,
 				74BCFAFC9E2C08BBF14CFFA5,
 				D6DE09A2D7D11B7B160E367E,
