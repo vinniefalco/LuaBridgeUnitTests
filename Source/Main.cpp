@@ -72,6 +72,18 @@ public:
     return m_L;
   }
 
+  /** Called when a test condition evaluates to false.
+  */
+  void fail (char const* cond, char const* file, int line)
+  {
+    file;
+    line;
+
+    using namespace std;
+
+    cout << "FAIL: " << cond << endl;
+  }
+
   /** Run the test.
   */
   int operator() ()
@@ -164,6 +176,10 @@ protected:
   lua_State* const m_L;
   int m_errFunc;
 };
+
+/** Verify a test condition.
+*/
+#define ASSURE(cond) (void)((cond)||(fail(#cond,__FILE__,__LINE__),0))
 
 //------------------------------------------------------------------------------
 
@@ -437,48 +453,6 @@ public:
           .endClass ()
       .endNamespace ();
 #endif
-  }
-
-private:
-  class Set_get
-  {
-  public:
-    Set_get():_i(0.0){}
-    void set(double i)
-    {
-      _i = i;
-    }
-    double get()const
-    {
-      return _i;
-    }
-  private:
-    double _i;
-  };
-
-  char const* getMainChunk ()
-  {
-    return
-      "\
-      local N = 10 \
-      local ave = 0 \
-      local times = 1000 \
-      for i = 0, N do \
-      local obj = Set_get() \
-      local t0 = os.clock() \
-      for i=1,times do \
-      obj:set(i) \
-      if(obj:get() ~= i)then \
-      error('failed') \
-      end \
-      end \
-      local dt = os.clock()-t0 \
-      if i~=0 then \
-      ave = ave + dt \
-      end \
-      end \
-      print('LuaBridge access (average elapsed time):',ave/N) \
-      ";
   }
 };
 
@@ -934,10 +908,6 @@ Test3::fn_called Test3::B_functions;
 
 //------------------------------------------------------------------------------
 
-/** Verify a test condition.
-*/
-#define ASSURE(cond) (void)((cond)||(fail(#cond,__FILE__,__LINE__),0))
-
 /**
     Tests of LuaRef
 */
@@ -970,18 +940,6 @@ public:
         .addConstructor <void (*) (void)> ()
       .endClass ()
       ;
-  }
-
-  /** Called when a test condition evaluates to false.
-  */
-  void fail (char const* cond, char const* file, int line)
-  {
-    file;
-    line;
-
-    using namespace std;
-
-    cout << "FAIL: " << cond << endl;
   }
 
   static int cfunc (lua_State* L)
@@ -1074,6 +1032,7 @@ public:
 
       LuaRef result = c ();
       int type = result.type ();
+      type;
       A* a = result;
       ASSURE (eq (a->name (), "A").toBool ());
     }
@@ -1098,6 +1057,53 @@ private:
 };
 
 //==============================================================================
+/**
+    Tests of LuaRef with registered functions.
+*/
+class Test5 : public TestBase
+{
+public:
+  static void f1 (luabridge::LuaRef v)
+  {
+    assert (int(v)==42);
+  };
+
+public:
+  Test5 () : TestBase ("LuaRef as arguments")
+  {
+    using namespace luabridge;
+
+    getGlobalNamespace (m_L)
+      .addFunction ("f1", &Test5::f1)
+      ;
+  }
+
+  int runNativeCode ()
+  {
+    int result = 0;
+
+    using namespace std;
+    using namespace luabridge;
+
+    LuaRef f = getGlobal (m_L, "main");
+    f ();
+
+    return result;
+  }
+
+private:
+  char const* getMainChunk ()
+  {
+    return
+      "\
+      function main () \
+        f1 (42) \
+      end \
+      ";
+  }
+};
+
+//==============================================================================
 
 int main (int, char **)
 {
@@ -1106,6 +1112,7 @@ int main (int, char **)
   Test1 () ();
   Test3 () ();
   Test4 () ();
+  Test5 () ();
 
   runSpeedTests ();
 
