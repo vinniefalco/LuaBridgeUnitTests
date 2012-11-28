@@ -1094,6 +1094,12 @@ public:
       LuaRef t = f ();
       int type = t.type ();
       ASSURE (t.isTable ());
+      ASSURE (t [1] == 1);
+      ASSURE (t [1] > 0);
+      ASSURE (t [1] >= -1);
+      ASSURE (t [1] < 2);
+      ASSURE (t [1] <= 3);
+      ASSURE (t ['a'] == 'a');
     }
     catch (LuaException& e)
     {
@@ -1110,7 +1116,10 @@ private:
       "\
       function f () \
         cf (42) \
-        return { } \
+        local t = { } \
+        t [1] = 1 \
+        t ['a'] = 'a' \
+        return t \
       end \
       ";
   }
