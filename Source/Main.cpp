@@ -962,14 +962,14 @@ public:
     // Global function
     LuaRef eq = LuaRef::getGlobal (m_L, "areEqual");
     ASSURE (eq.isFunction ());
-    ASSURE (eq (1, 1).toBool ());
-    ASSURE (!eq (1, 2).toBool ());
-    ASSURE (eq (3., 3.).toBool ());
-    ASSURE (!eq (3., 4.).toBool ());
-    ASSURE (eq ("a", "a").toBool ());
-    ASSURE (!eq ("a", "b").toBool ());
-    ASSURE (!eq (1, Nil ()).toBool ());
-    ASSURE (eq (Nil (), Nil ()).toBool ());
+    ASSURE (eq (1, 1).cast <bool> ());
+    ASSURE (!eq (1, 2).cast <bool> ());
+    ASSURE (eq (3., 3.).cast <bool> ());
+    ASSURE (!eq (3., 4.).cast <bool> ());
+    ASSURE (eq ("a", "a").cast <bool> ());
+    ASSURE (!eq ("a", "b").cast <bool> ());
+    ASSURE (!eq (1, Nil ()).cast <bool> ());
+    ASSURE (eq (Nil (), Nil ()).cast <bool> ());
 
     // Default constructor
     {
@@ -984,12 +984,12 @@ public:
     }
     {
       LuaRef v (m_L, 1);
-      ASSURE (eq (v, 1.).toBool ());
-      ASSURE (!eq (v, 2.).toBool ());
+      ASSURE (eq (v, 1.).cast <bool> ());
+      ASSURE (!eq (v, 2.).cast <bool> ());
     }
     {
       LuaRef v (m_L, "a");
-      ASSURE (eq (v, "a").toBool ());
+      ASSURE (eq (v, "a").cast <bool> ());
     }
 
 
@@ -1036,7 +1036,7 @@ public:
       int type = result.type ();
       type;
       A* a = result;
-      ASSURE (eq (a->name (), "A").toBool ());
+      ASSURE (eq (a->name (), "A").cast <bool> ());
     }
 
     //--------------------------------------------------------------------------
