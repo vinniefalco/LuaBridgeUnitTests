@@ -44,6 +44,8 @@
 #include "BinaryData.h"
 #include "SpeedTests.h"
 
+using namespace std;
+
 //==============================================================================
 /**
     Base for unit tests.
@@ -664,7 +666,7 @@ public:
   }
 
 private:
-  typedef std::string string;
+  typedef string string;
 
   static bool g_success;
 
@@ -1017,7 +1019,7 @@ public:
       t[2] = "hey";
       eq (t[2], "hey");
     }
-    catch (std::exception const& e)
+    catch (exception const& e)
     {
       cout << e.what () << endl;
     }
@@ -1063,7 +1065,7 @@ private:
 class Test5 : public TestBase
 {
 public:
-  static void f1 (luabridge::LuaRef v)
+  static void cf (luabridge::LuaRef v)
   {
     assert (int(v)==42);
   };
@@ -1074,7 +1076,7 @@ public:
     using namespace luabridge;
 
     getGlobalNamespace (m_L)
-      .addFunction ("f1", &Test5::f1)
+      .addFunction ("cf", &Test5::cf)
       ;
   }
 
@@ -1085,8 +1087,18 @@ public:
     using namespace std;
     using namespace luabridge;
 
-    LuaRef f = getGlobal (m_L, "main");
-    f ();
+    LuaRef f = getGlobal (m_L, "f");
+
+    try
+    {
+      LuaRef t = f ();
+      int type = t.type ();
+      ASSURE (t.isTable ());
+    }
+    catch (LuaException& e)
+    {
+      cerr << "Fail: " << e.what () << endl;
+    }
 
     return result;
   }
@@ -1096,8 +1108,9 @@ private:
   {
     return
       "\
-      function main () \
-        f1 (42) \
+      function f () \
+        cf (42) \
+        return { } \
       end \
       ";
   }
