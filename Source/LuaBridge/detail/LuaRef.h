@@ -173,7 +173,7 @@ private:
       StackPop p (m_L, 1);
       lua_rawgeti (m_L, LUA_REGISTRYINDEX, m_tableRef);
       lua_rawgeti (m_L, LUA_REGISTRYINDEX, m_keyRef);
-      Stack <U>::push (m_L, u);
+      Stack <T>::push (m_L, v);
       lua_settable (m_L, -3);
       return *this;
     }
@@ -337,6 +337,34 @@ private:
     Proxy operator[] (T key) const
     {
       return LuaRef (*this) [key];
+    }
+
+    //--------------------------------------------------------------------------
+    /**
+        Append a value to the table.
+
+        If the table is a sequence this will add another element to it.
+    */
+    template <class T>
+    void append (T v) const
+    {
+      push (m_L);
+      Stack <T>::push (m_L, v);
+      luaL_ref (m_L, -2);
+      lua_pop (m_L, 1);
+    }
+
+    //--------------------------------------------------------------------------
+    /**
+        Call the length operator.
+
+        This is identical to applying the Lua # operator.
+    */
+    int length () const
+    {
+      StackPop p (m_L, 1);
+      push (m_L);
+      return get_length (m_L, -1);
     }
 
     //--------------------------------------------------------------------------
@@ -832,6 +860,34 @@ public:
     return lua_rawequal (m_L, -1, -2) == 1;
   }
   /** @} */
+
+  //----------------------------------------------------------------------------
+  /**
+      Append a value to the table.
+
+      If the table is a sequence this will add another element to it.
+  */
+  template <class T>
+  void append (T v) const
+  {
+    push (m_L);
+    Stack <T>::push (m_L, v);
+    luaL_ref (m_L, -2);
+    lua_pop (m_L, 1);
+  }
+
+  //----------------------------------------------------------------------------
+  /**
+      Call the length operator.
+
+      This is identical to applying the Lua # operator.
+  */
+  int length () const
+  {
+    StackPop p (m_L, 1);
+    push (m_L);
+    return get_length (m_L, -1);
+  }
 
   //----------------------------------------------------------------------------
   /**
