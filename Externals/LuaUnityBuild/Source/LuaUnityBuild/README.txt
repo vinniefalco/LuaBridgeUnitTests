@@ -1,1 +1,0 @@
-The Lua directories mirror the official Lua releases.
