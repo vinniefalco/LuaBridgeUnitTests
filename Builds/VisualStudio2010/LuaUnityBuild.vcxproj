@@ -126,241 +126,241 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lapi.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lapi.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lauxlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lauxlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lbaselib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lbaselib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lcode.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lcode.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\ldblib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldblib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\ldebug.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldebug.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\ldo.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldo.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\ldump.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldump.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lfunc.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lfunc.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lgc.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lgc.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\linit.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\linit.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\liolib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\liolib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\llex.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\llex.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lmathlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lmathlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lmem.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lmem.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\loadlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\loadlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lobject.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lobject.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lopcodes.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lopcodes.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\loslib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\loslib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lparser.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lparser.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lstate.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstate.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lstring.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstring.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lstrlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstrlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\ltable.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltable.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\ltablib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltablib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\ltm.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltm.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lundump.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lundump.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lvm.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lvm.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.1.5\src\lzio.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lzio.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lapi.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lapi.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lauxlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lauxlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lbaselib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lbaselib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lbitlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lbitlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lcode.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lcode.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lcorolib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lcorolib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lctype.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lctype.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\ldblib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ldblib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\ldebug.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ldebug.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\ldo.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ldo.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\ldump.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ldump.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lfunc.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lfunc.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lgc.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lgc.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\linit.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\linit.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\liolib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\liolib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\llex.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\llex.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lmathlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lmathlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lmem.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lmem.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\loadlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\loadlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lobject.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lobject.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lopcodes.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lopcodes.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\loslib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\loslib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lparser.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lparser.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lstate.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lstate.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lstring.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lstring.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lstrlib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lstrlib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\ltable.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ltable.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\ltablib.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ltablib.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\ltm.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ltm.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lundump.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lundump.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lvm.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lvm.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\ExternalDependencies\Lua.5.2.1\src\lzio.c">
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lzio.c">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp"/>
     <ClCompile Include="..\..\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lapi.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lauxlib.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lcode.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\ldebug.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\ldo.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lfunc.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lgc.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\llex.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\llimits.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lmem.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lobject.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lopcodes.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lparser.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lstate.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lstring.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\ltable.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\ltm.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lua.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\luaconf.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lualib.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lundump.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lvm.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.1.5\src\lzio.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lapi.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lauxlib.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lcode.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lctype.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\ldebug.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\ldo.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lfunc.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lgc.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\llex.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\llimits.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lmem.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lobject.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lopcodes.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lparser.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lstate.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lstring.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\ltable.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\ltm.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lua.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lua.hpp"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\luaconf.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lualib.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lundump.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lvm.h"/>
-    <ClInclude Include="..\..\ExternalDependencies\Lua.5.2.1\src\lzio.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lapi.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lauxlib.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lcode.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldebug.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldo.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lfunc.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lgc.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\llex.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\llimits.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lmem.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lobject.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lopcodes.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lparser.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstate.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstring.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltable.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltm.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lua.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\luaconf.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lualib.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lundump.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lvm.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lzio.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lapi.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lauxlib.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lcode.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lctype.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ldebug.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ldo.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lfunc.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lgc.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\llex.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\llimits.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lmem.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lobject.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lopcodes.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lparser.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lstate.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lstring.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ltable.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\ltm.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lua.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lua.hpp"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\luaconf.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lualib.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lundump.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lvm.h"/>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.2.1\src\lzio.h"/>
     <ClInclude Include="..\..\Source\LuaUnityBuild\LuaUnityBuild.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\JuceHeader.h"/>
