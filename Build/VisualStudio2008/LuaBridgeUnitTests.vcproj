@@ -130,34 +130,71 @@
   <Files>
     <Filter Name="LuaBridgeUnitTests">
       <Filter Name="Docs">
-        <File RelativePath="..\..\Externals\LuaBridge\CHANGES"/>
-        <File RelativePath="..\..\Externals\LuaBridge\Doxyfile"/>
-        <File RelativePath="..\..\Externals\LuaBridge\README.md"/>
+        <File RelativePath="..\..\Extern\LuaBridge\CHANGES">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\Extern\LuaBridge\Doxyfile">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\Extern\LuaBridge\Manual.html">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+        <File RelativePath="..\..\Extern\LuaBridge\README.md">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
       </Filter>
       <Filter Name="LuaBridge">
-        <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
+        <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
         <Filter Name="detail">
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\CFunctions.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
-          <File RelativePath="..\..\externals\LuaBridge\Source\LuaBridge\detail\Namespace.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Stack.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\TypeTraits.h"/>
-          <File RelativePath="..\..\Externals\LuaBridge\Source\LuaBridge\detail\Userdata.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Namespace.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Stack.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeTraits.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Userdata.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\CFunctions.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
         </Filter>
       </Filter>
       <Filter Name="LuaUnityBuild">
-        <File RelativePath="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp"/>
-        <File RelativePath="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
-        <File RelativePath="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
+        <File RelativePath="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h"/>
+        <File RelativePath="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp"/>
+        <File RelativePath="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
       </Filter>
       <Filter Name="Source">
         <File RelativePath="..\..\Source\Main.cpp"/>
