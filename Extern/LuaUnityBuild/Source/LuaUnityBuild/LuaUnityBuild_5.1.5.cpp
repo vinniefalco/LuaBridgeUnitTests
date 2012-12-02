@@ -70,7 +70,16 @@ extern "C"
 #include "Lua.5.1.5/src/lcode.c"
 #include "Lua.5.1.5/src/ldblib.c"
 #include "Lua.5.1.5/src/ldebug.c"
+
+#if _MSC_VER
+#pragma warning (push)
+#pragma warning (disable: 4297) /* function assumed not to throw an exception but does */
+#endif
 #include "Lua.5.1.5/src/ldo.c"
+#if _MSC_VER
+#pragma warning (pop)
+#endif
+
 #include "Lua.5.1.5/src/ldump.c"
 #include "Lua.5.1.5/src/lfunc.c"
 #include "Lua.5.1.5/src/lgc.c"

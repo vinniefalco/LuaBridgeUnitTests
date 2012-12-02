@@ -87,10 +87,28 @@ extern "C"
 #include "Lua.5.2.1/src/lcode.c"
 #include "Lua.5.2.1/src/lctype.c"
 #include "Lua.5.2.1/src/ldebug.c"
+
+#if _MSC_VER
+#pragma warning (push)
+#pragma warning (disable: 4297) /* function assumed not to throw an exception but does */
+#endif
 #include "Lua.5.2.1/src/ldo.c"
+#if _MSC_VER
+#pragma warning (pop)
+#endif
+
 #include "Lua.5.2.1/src/ldump.c"
 #include "Lua.5.2.1/src/lfunc.c"
+
+#if _MSC_VER
+#pragma warning (push)
+#pragma warning (disable: 4146) /* unary minus operator applied to unsigned type, result still unsigned */
+#endif
 #include "Lua.5.2.1/src/lgc.c"
+#if _MSC_VER
+#pragma warning (pop)
+#endif
+
 #include "Lua.5.2.1/src/llex.c"
 #include "Lua.5.2.1/src/lmem.c"
 #include "Lua.5.2.1/src/lobject.c"
