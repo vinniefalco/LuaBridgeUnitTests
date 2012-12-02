@@ -101,7 +101,7 @@
 				AB17DDBAD8124FAB8E7BA7DD ); name = Source; sourceTree = "<group>"; };
 		919E956FF8569E7E424145C9 = { isa = XCBuildConfiguration; buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Externals/LuaBridge/Source ../../Externals/LuaUnityBuild/Source $(inherited)";
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Extern/LuaBridge/Source ../../Extern/LuaUnityBuild/Source $(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "/usr/bin";
@@ -118,7 +118,7 @@
 				"JUCER_XCODE_MAC_8DF12694=1"); }; name = Debug; };
 		D5DC9847C35B9D398F43C6F4 = { isa = XCBuildConfiguration; buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Externals/LuaBridge/Source ../../Externals/LuaUnityBuild/Source $(inherited)";
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../Extern/LuaBridge/Source ../../Extern/LuaUnityBuild/Source $(inherited)";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "/usr/bin";

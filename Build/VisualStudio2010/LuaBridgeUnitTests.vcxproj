@@ -55,7 +55,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Externals/LuaBridge/Source;../../Externals/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Extern/LuaBridge/Source;../../Extern/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCER_VS2010_2B5CCFA2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -94,7 +94,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MinSpace</Optimization>
-      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Externals/LuaBridge/Source;../../Externals/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;../../Extern/LuaBridge/Source;../../Extern/LuaUnityBuild/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;WIN32;_WINDOWS;NDEBUG;JUCER_VS2010_2B5CCFA2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
