@@ -130,46 +130,10 @@
   <Files>
     <Filter Name="LuaBridgeUnitTests">
       <Filter Name="Docs">
-        <File RelativePath="..\..\Extern\LuaBridge\CHANGES">
-          <FileConfiguration Name="Debug|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-          <FileConfiguration Name="Release|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-        </File>
-        <File RelativePath="..\..\Extern\LuaBridge\Doxyfile">
-          <FileConfiguration Name="Debug|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-          <FileConfiguration Name="Release|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-        </File>
-        <File RelativePath="..\..\Extern\LuaBridge\Manual.html">
-          <FileConfiguration Name="Debug|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-          <FileConfiguration Name="Release|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-        </File>
-        <File RelativePath="..\..\Extern\LuaBridge\README.md">
-          <FileConfiguration Name="Debug|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-          <FileConfiguration Name="Release|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-        </File>
+        <File RelativePath="..\..\Extern\LuaBridge\CHANGES"/>
+        <File RelativePath="..\..\Extern\LuaBridge\Doxyfile"/>
+        <File RelativePath="..\..\Extern\LuaBridge\Manual.html"/>
+        <File RelativePath="..\..\Extern\LuaBridge\README.md"/>
       </Filter>
       <Filter Name="LuaBridge">
         <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h"/>

@@ -1,4 +1,8 @@
-*         text=auto
+*                  text=auto
 
-*.sln     text merge=union eol=crlf
-
+# Visual Studio
+*.rc			   text eol=crlf
+*.vcproj           text eol=crlf
+*.vcxproj          text eol=crlf
+*.vcxproj.filters  text eol=crlf
+*.sln              text merge=union eol=crlf

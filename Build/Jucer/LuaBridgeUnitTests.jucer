@@ -5,10 +5,10 @@
               jucerVersion="3.0.0">
   <MAINGROUP id="C25QV2" name="LuaBridgeUnitTests">
     <GROUP id="{95CA99FB-DF17-22B1-86CF-AE816D4E4DC8}" name="Docs">
-      <FILE id="R2ew6P" name="CHANGES" compile="0" resource="1" file="../../Extern/LuaBridge/CHANGES"/>
-      <FILE id="toqNci" name="Doxyfile" compile="0" resource="1" file="../../Extern/LuaBridge/Doxyfile"/>
-      <FILE id="yD1YIW" name="Manual.html" compile="0" resource="1" file="../../Extern/LuaBridge/Manual.html"/>
-      <FILE id="l8ODZF" name="README.md" compile="0" resource="1" file="../../Extern/LuaBridge/README.md"/>
+      <FILE id="R2ew6P" name="CHANGES" compile="0" resource="0" file="../../Extern/LuaBridge/CHANGES"/>
+      <FILE id="toqNci" name="Doxyfile" compile="0" resource="0" file="../../Extern/LuaBridge/Doxyfile"/>
+      <FILE id="yD1YIW" name="Manual.html" compile="0" resource="0" file="../../Extern/LuaBridge/Manual.html"/>
+      <FILE id="l8ODZF" name="README.md" compile="0" resource="0" file="../../Extern/LuaBridge/README.md"/>
     </GROUP>
     <GROUP id="{0F361A05-4DCF-BC29-E66B-C2825F18B42F}" name="LuaBridge">
       <FILE id="wdfUGh" name="LuaBridge.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/LuaBridge.h"/>
@@ -47,19 +47,19 @@
     </GROUP>
   </MAINGROUP>
   <MODULES>
-    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_gui_audio" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
-    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
   <EXPORTFORMATS>
     <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="">

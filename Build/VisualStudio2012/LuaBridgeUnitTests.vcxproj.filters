@@ -1,46 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="LuaBridgeUnitTests">
       <UniqueIdentifier>{DD9B2BB0-10A4-D84F-855D-B8C521637F50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LuaBridgeUnitTests\Docs">
+      <UniqueIdentifier>{39C0BAC7-3C7E-1CAE-0939-1D47B180375C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaBridgeUnitTests\LuaBridge">
+      <UniqueIdentifier>{63CDC5CE-569E-94AE-1199-45108F993100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaBridgeUnitTests\LuaBridge\detail">
+      <UniqueIdentifier>{0F0BB2E9-834B-EC87-BBE2-B238E41577FD}</UniqueIdentifier>
+    </Filter>
     <Filter Include="LuaBridgeUnitTests\LuaUnityBuild">
       <UniqueIdentifier>{C2FEC07B-BF72-54A4-AF56-9A4783EABFA8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaBridgeUnitTests\Source">
+      <UniqueIdentifier>{00823E1C-B4F5-6384-4308-1D6DF114CE58}</UniqueIdentifier>
     </Filter>
     <Filter Include="Juce Library Code">
       <UniqueIdentifier>{8B4D1BAA-6DB4-CAEC-A0FA-271F354D5C61}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp">
+      <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp">
+      <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Main.cpp">
-      <Filter>LuaBridgeUnitTests</Filter>
+      <Filter>LuaBridgeUnitTests\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpeedTests.cpp">
-      <Filter>LuaBridgeUnitTests</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\UnitTests.cpp">
-      <Filter>LuaBridgeUnitTests</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp">
-      <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp">
-      <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
+      <Filter>LuaBridgeUnitTests\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\Jucer\JuceLibraryCode\BinaryData.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
+    <ClCompile Include="msvc_test.cpp">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\SpeedTests.h">
-      <Filter>LuaBridgeUnitTests</Filter>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\UnitTests.h">
-      <Filter>LuaBridgeUnitTests</Filter>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\FuncTraits.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Externals\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h">
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaException.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaRef.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Namespace.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Stack.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeList.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeTraits.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Userdata.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\CFunctions.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\ClassInfo.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Constructor.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild.h">
       <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SpeedTests.h">
+      <Filter>LuaBridgeUnitTests\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h">
       <Filter>Juce Library Code</Filter>
@@ -53,8 +109,20 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Extern\LuaBridge\CHANGES">
+      <Filter>LuaBridgeUnitTests\Docs</Filter>
+    </None>
+    <None Include="..\..\Extern\LuaBridge\Doxyfile">
+      <Filter>LuaBridgeUnitTests\Docs</Filter>
+    </None>
+    <None Include="..\..\Extern\LuaBridge\Manual.html">
+      <Filter>LuaBridgeUnitTests\Docs</Filter>
+    </None>
+    <None Include="..\..\Extern\LuaBridge\README.md">
+      <Filter>LuaBridgeUnitTests\Docs</Filter>
+    </None>
     <None Include="..\..\Source\UnitTests.lua">
-      <Filter>LuaBridgeUnitTests</Filter>
+      <Filter>LuaBridgeUnitTests\Source</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,8 @@
 	objects = {
 
 		5656CE833DE94B790FF61F8A = { isa = PBXBuildFile; fileRef = AC1FA358BE4B75BD530ADAD0; };
+		DCD119307B2DB6541A1D4B7F = { isa = PBXBuildFile; fileRef = 38B20E15023D1C2CF9DB1BD7; };
+		9ABD0F1A5CF4080BB0302962 = { isa = PBXBuildFile; fileRef = 19E2C47988BEA8783A35F606; };
 		471A9E7F48563DD6DD8221CE = { isa = PBXBuildFile; fileRef = B73DC442A61DC57921893D4C; };
 		8D0BFEAE5BD6C264D34CD9D5 = { isa = PBXBuildFile; fileRef = 63E0AB4376A34D76A1E996C4; };
 		B93186D290483505D69ACC8A = { isa = PBXBuildFile; fileRef = F045039CE99A35C0EB6666CD; };
@@ -89,7 +91,9 @@
 				90E78A8DECA50E184620EA84,
 				BA097D69370DAA1E30944BC2 ); name = "Juce Library Code"; sourceTree = "<group>"; };
 		DEAAD4086B396F2AB67EFE2D = { isa = PBXGroup; children = (
-				AC1FA358BE4B75BD530ADAD0 ); name = Resources; sourceTree = "<group>"; };
+				AC1FA358BE4B75BD530ADAD0,
+				38B20E15023D1C2CF9DB1BD7,
+				19E2C47988BEA8783A35F606 ); name = Resources; sourceTree = "<group>"; };
 		EFD0EB44D576D4C164447AF1 = { isa = PBXGroup; children = (  ); name = Frameworks; sourceTree = "<group>"; };
 		AB17DDBAD8124FAB8E7BA7DD = { isa = PBXGroup; children = (
 				78A252B187D877C589D3BFF2 ); name = Products; sourceTree = "<group>"; };
@@ -170,7 +174,9 @@
 				919E956FF8569E7E424145C9,
 				D5DC9847C35B9D398F43C6F4 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
 		38FF7EA50D1E615FD90A59A6 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
-				5656CE833DE94B790FF61F8A ); runOnlyForDeploymentPostprocessing = 0; };
+				5656CE833DE94B790FF61F8A,
+				DCD119307B2DB6541A1D4B7F,
+				9ABD0F1A5CF4080BB0302962 ); runOnlyForDeploymentPostprocessing = 0; };
 		36ABBF8BE8366D265344BD1A = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
 				471A9E7F48563DD6DD8221CE,
 				8D0BFEAE5BD6C264D34CD9D5,
