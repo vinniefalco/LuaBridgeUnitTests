@@ -136,6 +136,8 @@
         <File RelativePath="..\..\Extern\LuaBridge\README.md"/>
       </Filter>
       <Filter Name="LuaBridge">
+        <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\RefCountedObject.h"/>
+        <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\RefCountedPtr.h"/>
         <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
         <Filter Name="detail">
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
@@ -144,8 +146,6 @@
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Namespace.h"/>
-          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h"/>
-          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Stack.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeTraits.h"/>
@@ -161,6 +161,7 @@
         <File RelativePath="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
       </Filter>
       <Filter Name="Source">
+        <File RelativePath="..\..\Source\CompileTest1.cpp"/>
         <File RelativePath="..\..\Source\Main.cpp"/>
         <File RelativePath="..\..\Source\SpeedTests.cpp"/>
         <File RelativePath="..\..\Source\SpeedTests.h"/>

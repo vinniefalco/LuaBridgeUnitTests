@@ -31,6 +31,9 @@
     <ClCompile Include="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp">
       <Filter>LuaBridgeUnitTests\LuaUnityBuild</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CompileTest1.cpp">
+      <Filter>LuaBridgeUnitTests\Source</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Main.cpp">
       <Filter>LuaBridgeUnitTests\Source</Filter>
     </ClCompile>
@@ -42,6 +45,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\RefCountedObject.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\RefCountedPtr.h">
+      <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h">
       <Filter>LuaBridgeUnitTests\LuaBridge</Filter>
     </ClInclude>
@@ -61,12 +70,6 @@
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Namespace.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedObject.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\RefCountedPtr.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Stack.h">

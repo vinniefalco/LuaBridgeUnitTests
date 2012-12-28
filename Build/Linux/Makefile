@@ -45,6 +45,7 @@ endif
 OBJECTS := \
   $(OBJDIR)/LuaUnityBuild_5.1.5_28411761.o \
   $(OBJDIR)/LuaUnityBuild_5.2.1_5ceef49e.o \
+  $(OBJDIR)/CompileTest1_cd5305f5.o \
   $(OBJDIR)/Main_90ebc5c2.o \
   $(OBJDIR)/SpeedTests_ecaa6aa3.o \
   $(OBJDIR)/BinaryData_e2bc246d.o \
@@ -76,6 +77,11 @@ $(OBJDIR)/LuaUnityBuild_5.1.5_28411761.o: ../../Extern/LuaUnityBuild/Source/LuaU
 $(OBJDIR)/LuaUnityBuild_5.2.1_5ceef49e.o: ../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling LuaUnityBuild_5.2.1.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/CompileTest1_cd5305f5.o: ../../Source/CompileTest1.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling CompileTest1.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
