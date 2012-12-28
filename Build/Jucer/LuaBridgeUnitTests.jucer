@@ -17,8 +17,6 @@
       <FILE id="wdfUGh" name="LuaBridge.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/LuaBridge.h"/>
       <GROUP id="{76C4247B-5F29-BE1C-2644-74540C812888}" name="detail">
         <FILE id="NpHs3M" name="FuncTraits.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/FuncTraits.h"/>
-        <FILE id="NMmvqC" name="LuaBridgeExtras.h" compile="0" resource="0"
-              file="../../Extern/LuaBridge/Source/LuaBridge/detail/LuaBridgeExtras.h"/>
         <FILE id="mIordB" name="LuaException.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/LuaException.h"/>
         <FILE id="rOZgCG" name="LuaHelpers.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/LuaHelpers.h"/>
         <FILE id="g8ofSI" name="LuaRef.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/LuaRef.h"/>

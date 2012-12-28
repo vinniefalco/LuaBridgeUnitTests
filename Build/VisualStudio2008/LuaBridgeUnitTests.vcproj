@@ -141,7 +141,6 @@
         <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
         <Filter Name="detail">
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
-          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>

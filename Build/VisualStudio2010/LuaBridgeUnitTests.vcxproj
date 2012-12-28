@@ -138,7 +138,6 @@
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\RefCountedPtr.h"/>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
-    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h"/>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>

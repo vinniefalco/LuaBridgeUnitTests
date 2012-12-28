@@ -57,9 +57,6 @@
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\FuncTraits.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaBridgeExtras.h">
-      <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaException.h">
       <Filter>LuaBridgeUnitTests\LuaBridge\detail</Filter>
     </ClInclude>
