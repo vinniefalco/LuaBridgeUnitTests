@@ -140,7 +140,11 @@
         <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\RefCountedPtr.h"/>
         <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\LuaBridge.h"/>
         <Filter Name="detail">
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\CFunctions.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
+          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\FuncTraits.h"/>
+          <File RelativePath="..\..\extern\luabridge\source\LuaBridge\detail\Iterator.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaException.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaHelpers.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\LuaRef.h"/>
@@ -149,9 +153,6 @@
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeList.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\TypeTraits.h"/>
           <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Userdata.h"/>
-          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\CFunctions.h"/>
-          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\ClassInfo.h"/>
-          <File RelativePath="..\..\Extern\LuaBridge\Source\LuaBridge\detail\Constructor.h"/>
         </Filter>
       </Filter>
       <Filter Name="LuaUnityBuild">

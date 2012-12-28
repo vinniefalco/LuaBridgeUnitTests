@@ -16,7 +16,11 @@
       <FILE id="KZYu4Y" name="RefCountedPtr.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/RefCountedPtr.h"/>
       <FILE id="wdfUGh" name="LuaBridge.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/LuaBridge.h"/>
       <GROUP id="{76C4247B-5F29-BE1C-2644-74540C812888}" name="detail">
+        <FILE id="AXXM7A" name="CFunctions.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/CFunctions.h"/>
+        <FILE id="hbINmb" name="ClassInfo.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/ClassInfo.h"/>
+        <FILE id="r2Pph2" name="Constructor.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/Constructor.h"/>
         <FILE id="NpHs3M" name="FuncTraits.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/FuncTraits.h"/>
+        <FILE id="PnGLdX" name="Iterator.h" compile="0" resource="0" file="../../extern/luabridge/source/LuaBridge/detail/Iterator.h"/>
         <FILE id="mIordB" name="LuaException.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/LuaException.h"/>
         <FILE id="rOZgCG" name="LuaHelpers.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/LuaHelpers.h"/>
         <FILE id="g8ofSI" name="LuaRef.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/LuaRef.h"/>
@@ -25,9 +29,6 @@
         <FILE id="ai6WH0" name="TypeList.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/TypeList.h"/>
         <FILE id="lx25h5" name="TypeTraits.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/TypeTraits.h"/>
         <FILE id="UhTlS9" name="Userdata.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/Userdata.h"/>
-        <FILE id="AXXM7A" name="CFunctions.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/CFunctions.h"/>
-        <FILE id="hbINmb" name="ClassInfo.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/ClassInfo.h"/>
-        <FILE id="r2Pph2" name="Constructor.h" compile="0" resource="0" file="../../Extern/LuaBridge/Source/LuaBridge/detail/Constructor.h"/>
       </GROUP>
     </GROUP>
     <GROUP id="{5F290C50-B652-0A19-2155-C4B62719F137}" name="LuaUnityBuild">

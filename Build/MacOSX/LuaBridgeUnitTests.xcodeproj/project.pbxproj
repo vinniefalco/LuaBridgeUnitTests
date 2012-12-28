@@ -38,6 +38,7 @@
 		9C95AE7578E4792B55B87214 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RefCountedObject.h; path = ../../Extern/LuaBridge/Source/LuaBridge/RefCountedObject.h; sourceTree = "SOURCE_ROOT"; };
 		AC1FA358BE4B75BD530ADAD0 = { isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = "SOURCE_ROOT"; };
 		B2ADFFED6D6011288E733265 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LuaRef.h; path = ../../Extern/LuaBridge/Source/LuaBridge/detail/LuaRef.h; sourceTree = "SOURCE_ROOT"; };
+		B4FE20612E53BE20CE7F437B = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Iterator.h; path = ../../extern/luabridge/source/LuaBridge/detail/Iterator.h; sourceTree = "SOURCE_ROOT"; };
 		B73DC442A61DC57921893D4C = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "LuaUnityBuild_5.1.5.cpp"; path = "../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.1.5.cpp"; sourceTree = "SOURCE_ROOT"; };
 		B894C85D5FF0115DB24BB5EF = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FuncTraits.h; path = ../../Extern/LuaBridge/Source/LuaBridge/detail/FuncTraits.h; sourceTree = "SOURCE_ROOT"; };
 		BA097D69370DAA1E30944BC2 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../Jucer/JuceLibraryCode/JuceHeader.h; sourceTree = "SOURCE_ROOT"; };
@@ -54,7 +55,11 @@
 				38B20E15023D1C2CF9DB1BD7,
 				19E2C47988BEA8783A35F606 ); name = Docs; sourceTree = "<group>"; };
 		5F6A32678127C4AFA68F415F = { isa = PBXGroup; children = (
+				0E3309FD097CA661D6486B76,
+				DD11DD8B6D27FAFD240B15D8,
+				7EA4DEB29FCB680F22364F14,
 				B894C85D5FF0115DB24BB5EF,
+				B4FE20612E53BE20CE7F437B,
 				C854CBB2F3170AA568761466,
 				F00F4AC5B45A6A7F90816F98,
 				B2ADFFED6D6011288E733265,
@@ -62,10 +67,7 @@
 				4AD1E354334B1DC998CCFEA1,
 				2ED3F667B9526E1A6D50A72B,
 				1C2323E37D602B92CD48C7B5,
-				01BA428568501E65061FE672,
-				0E3309FD097CA661D6486B76,
-				DD11DD8B6D27FAFD240B15D8,
-				7EA4DEB29FCB680F22364F14 ); name = detail; sourceTree = "<group>"; };
+				01BA428568501E65061FE672 ); name = detail; sourceTree = "<group>"; };
 		E8B69517171B686836EA365E = { isa = PBXGroup; children = (
 				9C95AE7578E4792B55B87214,
 				7FFCFEA56394B7E5437C31ED,
