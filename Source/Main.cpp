@@ -978,6 +978,10 @@ public:
       LuaRef v (m_L);
       ASSURE (v.isNil ());
     }
+    {
+      LuaRef v (m_L);
+      ASSURE (v.isNil ());
+    }
 
     // Conversion constructors
     {
@@ -1128,6 +1132,54 @@ private:
 };
 
 //==============================================================================
+/**
+    Tests of LuaRef iterators.
+*/
+class Test6 : public TestBase
+{
+public:
+  Test6 () : TestBase ("LuaRef iterators")
+  {
+  }
+
+  int runNativeCode ()
+  {
+    int result = 0;
+
+    using namespace std;
+    using namespace luabridge;
+
+    LuaRef t = newTable (m_L);
+
+    t [1] = "hello";
+    t [2] = "world";
+    t ["pet"] = "cat";
+
+    // Iterate using C API
+    t.push (m_L);
+    push (m_L, Nil ());
+    while (lua_next (m_L, -2))
+    {
+      LuaRef key = LuaRef::fromStack (m_L, -2);
+      LuaRef val = LuaRef::fromStack (m_L, -1);
+      cout << "[" << key << "] = " << val << endl;
+      lua_pop (m_L, 1);
+    }
+    cout << endl;
+
+    // Iterate using iterator
+    for (Iterator iter (t); !iter.isNil (); ++iter)
+    {
+      LuaRef key = iter.key ();
+      LuaRef val = *iter;
+      cout << "[" << key << "] = " << val << endl;
+    }
+
+    return result;
+  }
+};
+
+//==============================================================================
 
 int main (int, char **)
 {
@@ -1137,6 +1189,7 @@ int main (int, char **)
   Test3 () ();
   Test4 () ();
   Test5 () ();
+  Test6 () ();
 
   runSpeedTests ();
 
