@@ -209,12 +209,12 @@ Copyright &copy; 2012 Vinnie Falco. Freely available under the terms of the
 
 <p>
 <a href="https://github.com/vinniefalco/LuaBridge">LuaBridge</a> is a
-lightweight and dependency-free library for making C++ data, functions, and
-classes available to <a href="http://wwww.lua.org">Lua</a>, a powerful, fast,
-lightweight, embeddable scripting language. LuaBridge has been tested and
-works with Lua revisions starting from 5.1.5, although it should work in any
-version of Lua from 5.1.0 and later. It also works transparently with
-LuaJIT.
+lightweight and dependency-free library for mapping data, functions, and
+classes back and forth between C++ and <a href="http://wwww.lua.org">Lua</a>,
+a powerful, fast, lightweight, embeddable scripting language. LuaBridge has
+been tested and works with Lua revisions starting from 5.1.5, although it
+should work in any version of Lua from 5.1.0 and later. It also works
+transparently with <a href="http://luajit.org/">LuaJIT</a>.
 </p>
 
 <p>
@@ -394,13 +394,13 @@ or contact Vinnie Falco directly at the email address indicated below.
 <li>Copyright 2012, Vinnie Falco <a href="mailto:vinnie.falco@gmail.com">&lt;vinnie.falco@gmail.com&gt;</a>
 <li>Copyright 2008, Nigel Atkinson <a href="mailto:suprapilot+LuaCode@gmail.com">&lt;suprapilot+LuaCode@gmail.com&gt;</a>
 <li>Copyright 2007, Nathan Reed
-<li>Portions from The Loki Library: Copyright (C) 2001 by Andrei Alexandrescu
+<li>Portions from The Loki Library: Copyright 2001 by Andrei Alexandrescu
 </ul>
 
 <p>
-Older versions of LuaBridge up to and including 0.2 (available separately)
-are distributed under the BSD 3-Clause License. See the corresponding
-license file in those versions for more details.
+Older versions of LuaBridge up to and including 0.2 (available separately) are
+distributed under the BSD 3-Clause License. See the corresponding license file
+in those versions (distributed separately) for more details.
 </p>
 
 </section>
@@ -571,7 +571,7 @@ static float staticVar;
 
 std::string stringProperty;
 std::string getString () { return stringProperty; }
-void setString (std::string s) { return s; }
+void setString (std::string s) { stringProperty = s; }
 
 int foo () { return 42; }
 void bar (char const*) { }
@@ -1471,7 +1471,7 @@ A <code>LuaRef</code> can hold classes <em>registered</em> using LuaBridge:
 <pre>
 class A;
 //...
-LuaRef v = new A;     // A LuaBridge userdata holding a pointer to A
+LuaRef v (L, new A); // A LuaBridge userdata holding a pointer to A
 </pre>
 
 <p>
@@ -1611,8 +1611,12 @@ type may be used as a key or value. Applying the array indexing operator
 called a <em>table proxy</em> which supports all the operations which can
 be performed on a <code>LuaRef</code>. In addition, assignments made to
 table proxies change the underlying table. Because table proxies are
-compiler-created temporary objects, you don't work with them directly.
-These operations all invoke table proxies behind the scenes:
+compiler-created temporary objects, you don't work with them directly. A
+LuaBridge table proxy should not be confused with the Lua proxy table
+technique described in the book "Programming in Lua"; the LuaBridge table
+proxy is simply an intermediate C++ class object that works behind the
+scenes to make table manipulation syntax conform to C++ idioms. These
+operations all invoke table proxies:
 </p>
 
 <pre>

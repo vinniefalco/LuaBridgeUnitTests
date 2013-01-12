@@ -39,6 +39,10 @@
 #include <string>
 #include <typeinfo>
 
+#define LUABRIDGE_MAJOR_VERSION 2
+#define LUABRIDGE_MINOR_VERSION 0
+#define LUABRIDGE_VERSION 200
+
 namespace luabridge
 {
 
@@ -60,6 +64,7 @@ class LuaRef;
 
 #include "detail/LuaException.h"
 #include "detail/LuaRef.h"
+#include "detail/Iterator.h"
 
 //------------------------------------------------------------------------------
 /**
@@ -133,8 +138,5 @@ inline void setHideMetatables (bool shouldHide)
 }
 
 }
-
-#include "detail/RefCountedObject.h"
-#include "detail/RefCountedPtr.h"
 
 #endif
