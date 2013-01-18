@@ -39,12 +39,9 @@
             file="../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp"/>
     </GROUP>
     <GROUP id="{5406E31E-F70D-A02B-F96E-5007103D4650}" name="Source">
-      <FILE id="O8xgF2" name="CompileTest1.cpp" compile="1" resource="0"
-            file="../../Source/CompileTest1.cpp"/>
       <FILE id="LvhMbv" name="Main.cpp" compile="1" resource="0" file="../../Source/Main.cpp"/>
-      <FILE id="et2YhB" name="SpeedTests.cpp" compile="1" resource="0" file="../../Source/SpeedTests.cpp"/>
-      <FILE id="jkxX3i" name="SpeedTests.h" compile="0" resource="0" file="../../Source/SpeedTests.h"/>
-      <FILE id="Jekyv4" name="UnitTests.lua" compile="0" resource="1" file="../../Source/UnitTests.lua"/>
+      <FILE id="XXBPKb" name="A.cpp" compile="1" resource="0" file="../../Source/A.cpp"/>
+      <FILE id="LAu7ju" name="A.hpp" compile="0" resource="0" file="../../Source/A.hpp"/>
     </GROUP>
   </MAINGROUP>
   <MODULES>

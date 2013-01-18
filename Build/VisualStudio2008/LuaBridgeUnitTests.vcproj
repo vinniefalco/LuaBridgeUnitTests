@@ -161,26 +161,13 @@
         <File RelativePath="..\..\Extern\LuaUnityBuild\Source\LuaUnityBuild\LuaUnityBuild_5.2.1.cpp"/>
       </Filter>
       <Filter Name="Source">
-        <File RelativePath="..\..\Source\CompileTest1.cpp"/>
         <File RelativePath="..\..\Source\Main.cpp"/>
-        <File RelativePath="..\..\Source\SpeedTests.cpp"/>
-        <File RelativePath="..\..\Source\SpeedTests.h"/>
-        <File RelativePath="..\..\Source\UnitTests.lua">
-          <FileConfiguration Name="Debug|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-          <FileConfiguration Name="Release|Win32"
-                             ExcludedFromBuild="true">
-            <Tool Name="VCCLCompilerTool"/>
-          </FileConfiguration>
-        </File>
+        <File RelativePath="..\..\Source\A.cpp"/>
+        <File RelativePath="..\..\Source\A.hpp"/>
       </Filter>
     </Filter>
     <Filter Name="Juce Library Code">
       <File RelativePath="..\Jucer\JuceLibraryCode\AppConfig.h"/>
-      <File RelativePath="..\Jucer\JuceLibraryCode\BinaryData.cpp"/>
-      <File RelativePath="..\Jucer\JuceLibraryCode\BinaryData.h"/>
       <File RelativePath="..\Jucer\JuceLibraryCode\JuceHeader.h"/>
       <File RelativePath="resources.rc"/>
     </Filter>

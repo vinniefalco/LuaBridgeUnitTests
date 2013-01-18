@@ -14,7 +14,6 @@
 #define __APPHEADERFILE_M7OTKW__
 
 #include "AppConfig.h"
-#include "BinaryData.h"
 
 #if ! DONT_SET_USING_JUCE_NAMESPACE
  // If your code uses a lot of JUCE classes, then this will obviously save you
