@@ -43,7 +43,7 @@
 #ifndef LUAUNITYBUILD_COMPILE_SOURCE
 
 #if LUAUNITYBUILD_VERSION >= 502
-# include "Lua.5.2.2/src/lua.hpp"
+# include "lua-5.2.2/src/lua.hpp"
 
 #elif LUAUNITYBUILD_VERSION >= 501
 extern "C"
