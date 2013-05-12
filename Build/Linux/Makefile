@@ -44,7 +44,7 @@ endif
 
 OBJECTS := \
   $(OBJDIR)/LuaUnityBuild_5.1.5_28411761.o \
-  $(OBJDIR)/LuaUnityBuild_5.2.1_5ceef49e.o \
+  $(OBJDIR)/LuaUnityBuild_5.2.2_5cfd0c1f.o \
   $(OBJDIR)/CompileTest1_cd5305f5.o \
   $(OBJDIR)/Main_90ebc5c2.o \
   $(OBJDIR)/SpeedTests_ecaa6aa3.o \
@@ -74,9 +74,9 @@ $(OBJDIR)/LuaUnityBuild_5.1.5_28411761.o: ../../Extern/LuaUnityBuild/Source/LuaU
 	@echo "Compiling LuaUnityBuild_5.1.5.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
-$(OBJDIR)/LuaUnityBuild_5.2.1_5ceef49e.o: ../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp
+$(OBJDIR)/LuaUnityBuild_5.2.2_5cfd0c1f.o: ../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.2.cpp
 	-@mkdir -p $(OBJDIR)
-	@echo "Compiling LuaUnityBuild_5.2.1.cpp"
+	@echo "Compiling LuaUnityBuild_5.2.2.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/CompileTest1_cd5305f5.o: ../../Source/CompileTest1.cpp

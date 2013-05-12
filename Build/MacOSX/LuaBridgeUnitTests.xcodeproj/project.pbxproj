@@ -10,7 +10,7 @@
 		DCD119307B2DB6541A1D4B7F = { isa = PBXBuildFile; fileRef = 38B20E15023D1C2CF9DB1BD7; };
 		9ABD0F1A5CF4080BB0302962 = { isa = PBXBuildFile; fileRef = 19E2C47988BEA8783A35F606; };
 		471A9E7F48563DD6DD8221CE = { isa = PBXBuildFile; fileRef = B73DC442A61DC57921893D4C; };
-		8D0BFEAE5BD6C264D34CD9D5 = { isa = PBXBuildFile; fileRef = 63E0AB4376A34D76A1E996C4; };
+		687FC87C870B066A531D4EC1 = { isa = PBXBuildFile; fileRef = 4A5B7722BF11FF3C05E2BCEF; };
 		EF90272AE5C450C2E545C1C6 = { isa = PBXBuildFile; fileRef = EC1DF53BCBCE1B8CC9DB8EE8; };
 		B93186D290483505D69ACC8A = { isa = PBXBuildFile; fileRef = F045039CE99A35C0EB6666CD; };
 		B69434BBDD9EC25A76EBC600 = { isa = PBXBuildFile; fileRef = 98D8F08CF9BA6CCD786A1899; };
@@ -24,9 +24,9 @@
 		2ED3F667B9526E1A6D50A72B = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TypeList.h; path = ../../Extern/LuaBridge/Source/LuaBridge/detail/TypeList.h; sourceTree = "SOURCE_ROOT"; };
 		38B20E15023D1C2CF9DB1BD7 = { isa = PBXFileReference; lastKnownFileType = text.html; name = Manual.html; path = ../../Extern/LuaBridge/Manual.html; sourceTree = "SOURCE_ROOT"; };
 		4484C92F96EE00379D6DC03D = { isa = PBXFileReference; lastKnownFileType = file; name = Doxyfile; path = ../../Extern/LuaBridge/Doxyfile; sourceTree = "SOURCE_ROOT"; };
+		4A5B7722BF11FF3C05E2BCEF = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "LuaUnityBuild_5.2.2.cpp"; path = "../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.2.cpp"; sourceTree = "SOURCE_ROOT"; };
 		4AD1E354334B1DC998CCFEA1 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = ../../Extern/LuaBridge/Source/LuaBridge/detail/Stack.h; sourceTree = "SOURCE_ROOT"; };
 		5FBCD4E8C393B9F4FD07B69A = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Namespace.h; path = ../../Extern/LuaBridge/Source/LuaBridge/detail/Namespace.h; sourceTree = "SOURCE_ROOT"; };
-		63E0AB4376A34D76A1E996C4 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "LuaUnityBuild_5.2.1.cpp"; path = "../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp"; sourceTree = "SOURCE_ROOT"; };
 		78A252B187D877C589D3BFF2 = { isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LuaBridgeUnitTests; sourceTree = "BUILT_PRODUCTS_DIR"; };
 		7BC46BBE20054ADF9F4B8A74 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData.cpp; path = ../Jucer/JuceLibraryCode/BinaryData.cpp; sourceTree = "SOURCE_ROOT"; };
 		7EA4DEB29FCB680F22364F14 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constructor.h; path = ../../Extern/LuaBridge/Source/LuaBridge/detail/Constructor.h; sourceTree = "SOURCE_ROOT"; };
@@ -76,7 +76,7 @@
 		54565857D57BBA64DE848E9A = { isa = PBXGroup; children = (
 				F0BDA2742E61EFE4DDDD2D9C,
 				B73DC442A61DC57921893D4C,
-				63E0AB4376A34D76A1E996C4 ); name = LuaUnityBuild; sourceTree = "<group>"; };
+				4A5B7722BF11FF3C05E2BCEF ); name = LuaUnityBuild; sourceTree = "<group>"; };
 		14FC9F8984730CE74685A135 = { isa = PBXGroup; children = (
 				EC1DF53BCBCE1B8CC9DB8EE8,
 				F045039CE99A35C0EB6666CD,
@@ -182,7 +182,7 @@
 				9ABD0F1A5CF4080BB0302962 ); runOnlyForDeploymentPostprocessing = 0; };
 		36ABBF8BE8366D265344BD1A = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
 				471A9E7F48563DD6DD8221CE,
-				8D0BFEAE5BD6C264D34CD9D5,
+				687FC87C870B066A531D4EC1,
 				EF90272AE5C450C2E545C1C6,
 				B93186D290483505D69ACC8A,
 				B69434BBDD9EC25A76EBC600,

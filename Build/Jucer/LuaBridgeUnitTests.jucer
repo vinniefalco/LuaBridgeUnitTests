@@ -35,8 +35,8 @@
       <FILE id="kVkpsO" name="LuaUnityBuild.h" compile="0" resource="0" file="../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild.h"/>
       <FILE id="yOlxRH" name="LuaUnityBuild_5.1.5.cpp" compile="1" resource="0"
             file="../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.1.5.cpp"/>
-      <FILE id="tvc6YT" name="LuaUnityBuild_5.2.1.cpp" compile="1" resource="0"
-            file="../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.1.cpp"/>
+      <FILE id="TT8yba" name="LuaUnityBuild_5.2.2.cpp" compile="1" resource="0"
+            file="../../Extern/LuaUnityBuild/Source/LuaUnityBuild/LuaUnityBuild_5.2.2.cpp"/>
     </GROUP>
     <GROUP id="{5406E31E-F70D-A02B-F96E-5007103D4650}" name="Source">
       <FILE id="O8xgF2" name="CompileTest1.cpp" compile="1" resource="0"
