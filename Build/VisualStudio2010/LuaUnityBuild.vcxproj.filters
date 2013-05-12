@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="LuaUnityBuild">
+      <UniqueIdentifier>{B5A5D4C5-3266-D4EB-40DD-35930E7B3DC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaUnityBuild\Lua 5.1.5">
+      <UniqueIdentifier>{3AF7703B-B1AD-AFA0-6495-BB2233AE9576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Juce Library Code">
+      <UniqueIdentifier>{8B4D1BAA-6DB4-CAEC-A0FA-271F354D5C61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaUnityBuild\lua-5.2.2">
+      <UniqueIdentifier>{5036d4cc-c010-4177-bbe4-1fb90dd57284}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lapi.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lauxlib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lbaselib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lcode.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldblib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldebug.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldo.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldump.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lfunc.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lgc.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\linit.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\liolib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\llex.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lmathlib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lmem.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\loadlib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lobject.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lopcodes.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\loslib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lparser.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstate.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstring.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstrlib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltable.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltablib.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltm.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lundump.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lvm.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lzio.c">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\LuaUnityBuild_5.1.5.cpp">
+      <Filter>LuaUnityBuild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\LuaUnityBuild_5.2.2.cpp">
+      <Filter>LuaUnityBuild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ldblib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ldebug.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ldo.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ldump.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lfunc.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lgc.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\linit.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\liolib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\llex.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lmathlib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lmem.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\loadlib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lobject.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lopcodes.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\loslib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lparser.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lstate.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lstring.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lstrlib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ltable.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ltablib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ltm.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lundump.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lvm.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lzio.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lapi.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lauxlib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lbaselib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lbitlib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lcode.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lcorolib.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lctype.c">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lapi.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lauxlib.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lcode.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldebug.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ldo.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lfunc.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lgc.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\llex.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\llimits.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lmem.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lobject.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lopcodes.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lparser.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstate.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lstring.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltable.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\ltm.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lua.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\luaconf.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lualib.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lundump.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lvm.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\Lua.5.1.5\src\lzio.h">
+      <Filter>LuaUnityBuild\Lua 5.1.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\LuaUnityBuild.h">
+      <Filter>LuaUnityBuild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Jucer\JuceLibraryCode\JuceHeader.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lctype.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ldebug.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ldo.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lfunc.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lgc.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\llex.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\llimits.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lmem.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lobject.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lopcodes.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lparser.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lstate.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lstring.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ltable.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\ltm.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lua.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lua.hpp">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\luaconf.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lualib.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lundump.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lvm.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lzio.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lapi.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lauxlib.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\lcode.h">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Source\LuaUnityBuild\lua-5.2.2\src\Makefile">
+      <Filter>LuaUnityBuild\lua-5.2.2</Filter>
+    </None>
+  </ItemGroup>
+</Project>
