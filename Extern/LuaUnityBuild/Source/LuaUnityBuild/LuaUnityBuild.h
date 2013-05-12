@@ -36,14 +36,14 @@
 // The value is the same as LUA_VERSION_NUM in lua.h
 
 #ifndef LUAUNITYBUILD_VERSION
-#define LUAUNITYBUILD_VERSION 502   // use 5.2.1
+#define LUAUNITYBUILD_VERSION 502   // use 5.2.2
 //#define LUAUNITYBUILD_VERSION 501   // use 5.1.5
 #endif
 
 #ifndef LUAUNITYBUILD_COMPILE_SOURCE
 
 #if LUAUNITYBUILD_VERSION >= 502
-# include "Lua.5.2.1/src/lua.hpp"
+# include "Lua.5.2.2/src/lua.hpp"
 
 #elif LUAUNITYBUILD_VERSION >= 501
 extern "C"
